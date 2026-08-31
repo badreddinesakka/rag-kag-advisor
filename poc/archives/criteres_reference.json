@@ -1,0 +1,642 @@
+{
+  "_avertissement": "LISTE DE REFERENCE — A VERIFIER LIGNE PAR LIGNE DANS LE PDF AVANT USAGE. Cette liste a ete redigee a partir du document RFP_OT_Bill_Generation_Solution_V1_with_HR.pdf. C'est TOI qui signes le rapport : relis chaque ligne dans le document et corrige ce qui te semble faux ou manquant. Un critere en trop ou en moins ici fausse tous les scores du banc d'essai.",
+  "_document": "RFP_OT_Bill_Generation_Solution_V1_with_HR.pdf",
+  "_comment_mots_cles": "mots_cles est une liste de GROUPES. Un critere est considere trouve si, pour CHAQUE groupe, au moins un mot du groupe apparait dans la reponse. Les mots sont compares sans accents et en minuscules.",
+
+  "criteres": [
+    {
+      "id": "ENT-01",
+      "categorie": "entreprise",
+      "critere": "Anciennete de l'entreprise",
+      "valeur": "au moins 5 ans a la date de soumission",
+      "statut": "obligatoire",
+      "source": "12.0 Eligibility criteria",
+      "mots_cles": [["anciennete", "existence", "annees d'existence", "5 ans", "cinq ans", "existing"]]
+    },
+    {
+      "id": "ENT-02",
+      "categorie": "entreprise",
+      "critere": "Certification ISO 27001 de l'entreprise",
+      "valeur": "ISO 27001",
+      "statut": "recommande",
+      "source": "12.0 Eligibility criteria / 17.0",
+      "mots_cles": [["iso 27001", "iso27001"]]
+    },
+    {
+      "id": "ENT-03",
+      "categorie": "entreprise",
+      "critere": "Situation fiscale reguliere",
+      "valeur": "declarations souscrites, sommes reglees ou garanties constituees",
+      "statut": "obligatoire",
+      "source": "12.0 Eligibility criteria",
+      "mots_cles": [["fiscal", "fiscale", "tax", "impot"]]
+    },
+    {
+      "id": "ENT-04",
+      "categorie": "entreprise",
+      "critere": "Ne pas etre en liquidation judiciaire",
+      "valeur": "exclusion",
+      "statut": "obligatoire",
+      "source": "12.0 Eligibility criteria",
+      "mots_cles": [["liquidation"]]
+    },
+    {
+      "id": "ENT-05",
+      "categorie": "entreprise",
+      "critere": "Ne pas etre en redressement judiciaire (sauf autorisation)",
+      "valeur": "exclusion sauf autorisation judiciaire",
+      "statut": "obligatoire",
+      "source": "12.0 Eligibility criteria",
+      "mots_cles": [["redressement", "receivership"]]
+    },
+    {
+      "id": "ENT-06",
+      "categorie": "entreprise",
+      "critere": "References clients chez des operateurs telecom",
+      "valeur": "2 comptes de reference, sur les 10 dernieres annees",
+      "statut": "obligatoire",
+      "source": "17.0 References",
+      "mots_cles": [["reference", "references"], ["deux", "2", "two"]]
+    },
+    {
+      "id": "ENT-07",
+      "categorie": "entreprise",
+      "critere": "Experience dans le secteur des telecommunications",
+      "valeur": "obligatoire pour repondre",
+      "statut": "obligatoire",
+      "source": "17.0 References",
+      "mots_cles": [["telecom", "telecommunication", "telecommunications"], ["experience", "secteur", "sector"]]
+    },
+    {
+      "id": "ENT-08",
+      "categorie": "entreprise",
+      "critere": "Informations financieres et croissance du profit",
+      "valeur": "rapport annuel + historique sur 3 ans",
+      "statut": "demande",
+      "source": "12.0 Financial Performance",
+      "mots_cles": [["financier", "financiere", "financial", "profit", "rapport annuel", "annual report"]]
+    },
+    {
+      "id": "ENT-09",
+      "categorie": "entreprise",
+      "critere": "Les references doivent accepter de discuter la solution avec Ooredoo",
+      "valeur": "disponibilite pour echange technique",
+      "statut": "obligatoire",
+      "source": "17.0 References",
+      "mots_cles": [["willing", "accepter", "discuter", "discuss", "joignable", "contactable"]]
+    },
+
+    {
+      "id": "EQP-01",
+      "categorie": "equipe",
+      "critere": "Poste obligatoire : Network & Billing Systems Engineer",
+      "valeur": "ingenieur senior, integration avec BSCS/BCH et Oracle DB",
+      "statut": "obligatoire",
+      "source": "19.1",
+      "mots_cles": [["network & billing", "network and billing", "billing systems engineer", "ingenieur reseau et facturation"]]
+    },
+    {
+      "id": "EQP-02",
+      "categorie": "equipe",
+      "critere": "Experience en ingenierie reseau",
+      "valeur": "5 ans minimum",
+      "statut": "obligatoire",
+      "source": "19.2",
+      "mots_cles": [["reseau", "network"], ["5 ans", "5 years", "cinq ans"]]
+    },
+    {
+      "id": "EQP-03",
+      "categorie": "equipe",
+      "critere": "Experience en systemes de facturation telecom",
+      "valeur": "3 ans minimum (BSCS, BSS, OSS)",
+      "statut": "obligatoire",
+      "source": "19.2",
+      "mots_cles": [["facturation", "billing", "bscs", "bss", "oss"], ["3 ans", "3 years", "trois ans"]]
+    },
+    {
+      "id": "EQP-04",
+      "categorie": "equipe",
+      "critere": "Experience en integration logicielle d'entreprise",
+      "valeur": "3 ans minimum (XML, PDF, connecteurs Oracle)",
+      "statut": "obligatoire",
+      "source": "19.2",
+      "mots_cles": [["integration"], ["3 ans", "3 years", "trois ans"]]
+    },
+    {
+      "id": "EQP-05",
+      "categorie": "equipe",
+      "critere": "Certification CCNA",
+      "valeur": "Cisco, niveau Associate — au moins 1 membre",
+      "statut": "obligatoire",
+      "source": "19.3",
+      "mots_cles": [["ccna"]]
+    },
+    {
+      "id": "EQP-06",
+      "categorie": "equipe",
+      "critere": "Certification CCNP",
+      "valeur": "Cisco, niveau Professional — au moins 1 membre",
+      "statut": "obligatoire",
+      "source": "19.3",
+      "mots_cles": [["ccnp"]]
+    },
+    {
+      "id": "EQP-07",
+      "categorie": "equipe",
+      "critere": "Certification ISO 27001 Lead Implementer / Auditor",
+      "valeur": "recommandee",
+      "statut": "recommande",
+      "source": "19.3",
+      "mots_cles": [["lead implementer", "lead auditor", "iso 27001 lead"]]
+    },
+    {
+      "id": "EQP-08",
+      "categorie": "equipe",
+      "critere": "Certification ITIL Foundation",
+      "valeur": "recommandee",
+      "statut": "recommande",
+      "source": "19.3",
+      "mots_cles": [["itil"]]
+    },
+    {
+      "id": "EQP-09",
+      "categorie": "equipe",
+      "critere": "Maitrise Cisco IOS / IOS-XE",
+      "valeur": "niveau Expert",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["ios", "cisco ios"]]
+    },
+    {
+      "id": "EQP-10",
+      "categorie": "equipe",
+      "critere": "Maitrise BGP",
+      "valeur": "niveau Avance",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["bgp", "border gateway"]]
+    },
+    {
+      "id": "EQP-11",
+      "categorie": "equipe",
+      "critere": "Maitrise OSPF",
+      "valeur": "niveau Avance",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["ospf", "open shortest path"]]
+    },
+    {
+      "id": "EQP-12",
+      "categorie": "equipe",
+      "critere": "Maitrise Oracle DB / SQL",
+      "valeur": "niveau Intermediaire",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["oracle", "sql"]]
+    },
+    {
+      "id": "EQP-13",
+      "categorie": "equipe",
+      "critere": "Maitrise generation XML / PDF (iText, XSL-FO)",
+      "valeur": "niveau Avance",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["itext", "xsl-fo", "xsl fo", "xslfo"]]
+    },
+    {
+      "id": "EQP-14",
+      "categorie": "equipe",
+      "critere": "Maitrise Java / API REST",
+      "valeur": "niveau Intermediaire",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["java", "rest"]]
+    },
+    {
+      "id": "EQP-15",
+      "categorie": "equipe",
+      "critere": "Maitrise Linux / Shell",
+      "valeur": "niveau Intermediaire",
+      "statut": "obligatoire",
+      "source": "19.4",
+      "mots_cles": [["linux", "shell"]]
+    },
+    {
+      "id": "EQP-16",
+      "categorie": "equipe",
+      "critere": "Diplome Bac+5 / Master en reseaux ou telecom",
+      "valeur": "obligatoire pour le chef de projet et les membres cles",
+      "statut": "obligatoire",
+      "source": "19.5",
+      "mots_cles": [["bac+5", "bac +5", "master", "msc", "ingenieur", "engineer degree"]]
+    },
+    {
+      "id": "EQP-17",
+      "categorie": "equipe",
+      "critere": "Diplome Bac+3 / Licence en informatique",
+      "valeur": "minimum accepte",
+      "statut": "minimum accepte",
+      "source": "19.5",
+      "mots_cles": [["bac+3", "bac +3", "licence", "bachelor", "bsc"]]
+    },
+    {
+      "id": "EQP-18",
+      "categorie": "equipe",
+      "critere": "CV de tous les membres proposes",
+      "valeur": "formation, experience, certifications avec copies, references projet",
+      "statut": "obligatoire",
+      "source": "19.5 Note",
+      "mots_cles": [["cv", "curriculum"]]
+    },
+    {
+      "id": "EQP-19",
+      "categorie": "equipe",
+      "critere": "Membres certifies sur la solution proposee",
+      "valeur": "copies des certifications a fournir",
+      "statut": "obligatoire",
+      "source": "14.0 Implementation",
+      "mots_cles": [["solution certified", "certifies sur la solution", "certification"], ["copie", "copies", "fournir", "provide"]]
+    },
+    {
+      "id": "EQP-20",
+      "categorie": "equipe",
+      "critere": "Limitation du turnover du personnel",
+      "valeur": "max 5% la 1re annee, 10% la 2e annee",
+      "statut": "obligatoire",
+      "source": "11.0 Warranties",
+      "mots_cles": [["turnover", "rotation"], ["5%", "5 %", "10%", "10 %"]]
+    },
+    {
+      "id": "EQP-21",
+      "categorie": "equipe",
+      "critere": "Formation des equipes Ooredoo",
+      "valeur": "au moins 8 personnes, de preference en francais, sur site Ooredoo",
+      "statut": "obligatoire",
+      "source": "15.0 Training Services",
+      "mots_cles": [["formation", "training"], ["8", "huit"]]
+    },
+    {
+      "id": "EQP-22",
+      "categorie": "equipe",
+      "critere": "Equipe de support locale ou capacite de deplacement",
+      "valeur": "pendant et apres le projet",
+      "statut": "obligatoire",
+      "source": "16.0 Local/offshore teams",
+      "mots_cles": [["locale", "local", "sur site", "onsite", "deplacement"], ["support", "equipe", "team"]]
+    },
+
+    {
+      "id": "SOL-01",
+      "categorie": "solution",
+      "critere": "Interface graphique de personnalisation du design de facture",
+      "valeur": "sans modification de code",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["interface graphique", "graphical interface", "interactive interface"]]
+    },
+    {
+      "id": "SOL-02",
+      "categorie": "solution",
+      "critere": "Production d'un fichier XML unifie par facture",
+      "valeur": "un XML par facture",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["xml unifie", "unified xml", "fichier xml", "xml file"]]
+    },
+    {
+      "id": "SOL-03",
+      "categorie": "solution",
+      "critere": "Insertion des details de facture en base de donnees",
+      "valeur": "pour les statistiques",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["base de donnees", "data base", "database", "tables"]]
+    },
+    {
+      "id": "SOL-04",
+      "categorie": "solution",
+      "critere": "Production de la facture au format PDF",
+      "valeur": "PDF",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["pdf"], ["facture", "bill", "invoice"]]
+    },
+    {
+      "id": "SOL-05",
+      "categorie": "solution",
+      "critere": "Envoi des factures par email",
+      "valeur": "—",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["email", "mail", "courriel"]]
+    },
+    {
+      "id": "SOL-06",
+      "categorie": "solution",
+      "critere": "Production et envoi des details d'appel au format CSV",
+      "valeur": "CSV",
+      "statut": "obligatoire",
+      "source": "3.0 Technical Area",
+      "mots_cles": [["csv"]]
+    },
+    {
+      "id": "SOL-07",
+      "categorie": "solution",
+      "critere": "Facture PDF unique pour les grands comptes decoupes",
+      "valeur": "generation automatique (aujourd'hui manuelle)",
+      "statut": "obligatoire",
+      "source": "3.1 Main Pain Points",
+      "mots_cles": [["grand compte", "grands comptes", "large account", "splitted", "decoupe"]]
+    },
+    {
+      "id": "SOL-08",
+      "categorie": "solution",
+      "critere": "Application web de pilotage de la solution",
+      "valeur": "gestion, execution, supervision, reporting",
+      "statut": "obligatoire",
+      "source": "3.0 / 6.3",
+      "mots_cles": [["application web", "web application"]]
+    },
+    {
+      "id": "SOL-09",
+      "categorie": "solution",
+      "critere": "Architecture en mode reprise apres sinistre",
+      "valeur": "Active-Active ou Active-Passive",
+      "statut": "obligatoire",
+      "source": "6.3 Target Architecture",
+      "mots_cles": [["disaster recovery", "reprise apres sinistre", "active-active", "active-passive", "active active"]]
+    },
+    {
+      "id": "SOL-10",
+      "categorie": "solution",
+      "critere": "Performance de generation superieure a l'existant",
+      "valeur": "l'existant genere 20 000 factures/heure (juge trop lent)",
+      "statut": "obligatoire",
+      "source": "3.1 Main Pain Points",
+      "mots_cles": [["20k", "20 000", "20000"], ["heure", "hour"]]
+    },
+    {
+      "id": "SOL-11",
+      "categorie": "solution",
+      "critere": "Reduction de la consommation CPU / memoire serveur",
+      "valeur": "—",
+      "statut": "obligatoire",
+      "source": "3.1 Main Pain Points",
+      "mots_cles": [["cpu", "memoire", "memory", "ressources serveur"]]
+    },
+    {
+      "id": "SOL-12",
+      "categorie": "solution",
+      "critere": "Solution non basee sur des technologies obsoletes",
+      "valeur": "motif d'exclusion",
+      "statut": "eliminatoire",
+      "source": "5.4",
+      "mots_cles": [["obsolete", "obsoletes", "old technolog", "technologies anciennes"]]
+    },
+    {
+      "id": "SOL-13",
+      "categorie": "solution",
+      "critere": "Version proposee supportee au moins 3 ans",
+      "valeur": "3 ans",
+      "statut": "obligatoire",
+      "source": "5.5 Licensing Model",
+      "mots_cles": [["supporte", "supported", "support"], ["3 ans", "3 years", "trois ans"]]
+    },
+    {
+      "id": "SOL-14",
+      "categorie": "solution",
+      "critere": "Solution industrialisee",
+      "valeur": "standard, preconfiguree, automatisee, scalable, fiable",
+      "statut": "obligatoire",
+      "source": "3.0 Goals and Objectives",
+      "mots_cles": [["industrialis", "industrialized"]]
+    },
+
+    {
+      "id": "DOS-01",
+      "categorie": "dossier",
+      "critere": "Reponse deposee via le systeme IVALUA Sourcing",
+      "valeur": "1 copie electronique",
+      "statut": "obligatoire",
+      "source": "4.1 / 5.1",
+      "mots_cles": [["ivalua"]]
+    },
+    {
+      "id": "DOS-02",
+      "categorie": "dossier",
+      "critere": "Les brochures marketing ne valent pas reponse",
+      "valeur": "a soumettre separement",
+      "statut": "obligatoire",
+      "source": "5.1",
+      "mots_cles": [["brochure", "marketing"]]
+    },
+    {
+      "id": "DOS-03",
+      "categorie": "dossier",
+      "critere": "Format impose des livrables",
+      "valeur": "9 livrables, noms de fichiers et dossiers imposes, PDF sauf matrice en Excel",
+      "statut": "obligatoire",
+      "source": "5.2 Deliverables Format",
+      "mots_cles": [["livrable", "livrables", "deliverable", "deliverables"], ["format", "nom", "name", "dossier", "folder"]]
+    },
+    {
+      "id": "DOS-04",
+      "categorie": "dossier",
+      "critere": "Matrice de conformite au format Excel fourni",
+      "valeur": "OT Bill Generation solution Requirement v1.xls",
+      "statut": "obligatoire",
+      "source": "5.2 / 5.3",
+      "mots_cles": [["matrice de conformite", "compliance matrix"]]
+    },
+    {
+      "id": "DOS-05",
+      "categorie": "dossier",
+      "critere": "Reponse clause par clause avec un seul statut de conformite",
+      "valeur": "Fully compliant / Partially compliant / Not compliant",
+      "statut": "obligatoire",
+      "source": "5.3.2",
+      "mots_cles": [["fully compliant", "partially compliant", "not compliant", "totalement conforme", "partiellement conforme"]]
+    },
+    {
+      "id": "DOS-06",
+      "categorie": "dossier",
+      "critere": "Reference document + numero de page pour chaque conformite",
+      "valeur": "colonne reference de la matrice",
+      "statut": "obligatoire",
+      "source": "5.3.2",
+      "mots_cles": [["numero de page", "page number", "cross-reference", "cross reference"]]
+    },
+    {
+      "id": "DOS-07",
+      "categorie": "dossier",
+      "critere": "Reponse dans le meme ordre que les sections du RFP",
+      "valeur": "sinon rejet",
+      "statut": "eliminatoire",
+      "source": "9.0 Completion Instructions",
+      "mots_cles": [["ordre", "order"], ["section", "sections"]]
+    },
+    {
+      "id": "DOS-08",
+      "categorie": "dossier",
+      "critere": "Les references a des documents externes ou sites web ne sont pas considerees",
+      "valeur": "—",
+      "statut": "obligatoire",
+      "source": "9.0 Completion Instructions",
+      "mots_cles": [["documents externes", "external documents", "web sites", "sites web"]]
+    },
+    {
+      "id": "DOS-09",
+      "categorie": "dossier",
+      "critere": "Proposition signee par un responsable habilite + numero de RFP",
+      "valeur": "—",
+      "statut": "obligatoire",
+      "source": "9.0",
+      "mots_cles": [["signe", "signee", "signed", "authorized official"]]
+    },
+    {
+      "id": "DOS-10",
+      "categorie": "dossier",
+      "critere": "Offre ferme pendant 30 jours",
+      "valeur": "30 jours a compter de la cloture",
+      "statut": "obligatoire",
+      "source": "9.0 Standard Provisions",
+      "mots_cles": [["30 jours", "30 days", "trente jours"]]
+    },
+    {
+      "id": "DOS-11",
+      "categorie": "dossier",
+      "critere": "Prix non superieurs a ceux pratiques avec d'autres clients",
+      "valeur": "garantie du soumissionnaire",
+      "statut": "obligatoire",
+      "source": "9.0 Standard Provisions",
+      "mots_cles": [["prix", "price", "prices"], ["autre client", "other customer", "autres clients"]]
+    },
+    {
+      "id": "DOS-12",
+      "categorie": "dossier",
+      "critere": "Devis budgetaire detaille et ventile",
+      "valeur": "frais de support, services professionnels, integration, personnalisation, deplacements separes",
+      "statut": "obligatoire",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "mots_cles": [["budgetaire", "budgetary", "devis", "pricing", "itemized"]]
+    },
+    {
+      "id": "DOS-13",
+      "categorie": "dossier",
+      "critere": "Offre incluant 3 ans de maintenance, annees 4 et 5 chiffrees a part",
+      "valeur": "3 ans inclus + 4e et 5e annee separees",
+      "statut": "obligatoire",
+      "source": "13.0",
+      "mots_cles": [["maintenance"], ["3 ans", "3 years", "4th", "5th", "4e", "5e"]]
+    },
+    {
+      "id": "DOS-14",
+      "categorie": "dossier",
+      "critere": "Cout total de possession sur 3 ans avec detail du calcul",
+      "valeur": "TCO 3 ans",
+      "statut": "obligatoire",
+      "source": "13.0 Total Cost of Ownership",
+      "mots_cles": [["tco", "cout total", "total cost of ownership"]]
+    },
+    {
+      "id": "DOS-15",
+      "categorie": "dossier",
+      "critere": "Modele de licence detaille",
+      "valeur": "variantes, cout par module, maintenance annuelle, dependances",
+      "statut": "obligatoire",
+      "source": "5.5 Licensing Model",
+      "mots_cles": [["licence", "license", "licensing"]]
+    },
+    {
+      "id": "DOS-16",
+      "categorie": "dossier",
+      "critere": "Matrice RACI et matrice d'escalade",
+      "valeur": "—",
+      "statut": "obligatoire",
+      "source": "16.0 Support & maintenance",
+      "mots_cles": [["raci", "escalade", "escalation"]]
+    },
+    {
+      "id": "SLA-01",
+      "categorie": "dossier",
+      "critere": "SLA — reponse initiale a tout incident",
+      "valeur": "1 heure",
+      "statut": "obligatoire",
+      "source": "16.0 tableau SLA",
+      "mots_cles": [["reponse initiale", "initial response"], ["1 h", "1h", "1 heure", "une heure"]]
+    },
+    {
+      "id": "SLA-02",
+      "categorie": "dossier",
+      "critere": "SLA — correction finale incident critique (Emergency)",
+      "valeur": "3 jours ouvres (contournement 1 jour ouvre)",
+      "statut": "obligatoire",
+      "source": "16.0 tableau SLA",
+      "mots_cles": [["critique", "critical", "emergency"], ["3 wd", "3 jours", "3 j"]]
+    },
+    {
+      "id": "SLA-03",
+      "categorie": "dossier",
+      "critere": "SLA — correction finale incident majeur (Prio1)",
+      "valeur": "5 jours ouvres",
+      "statut": "obligatoire",
+      "source": "16.0 tableau SLA",
+      "mots_cles": [["majeur", "major", "prio1", "prio 1"], ["5 wd", "5 jours", "5 j"]]
+    },
+    {
+      "id": "SLA-04",
+      "categorie": "dossier",
+      "critere": "SLA — correction finale incident moyen (Prio2)",
+      "valeur": "10 jours ouvres",
+      "statut": "obligatoire",
+      "source": "16.0 tableau SLA",
+      "mots_cles": [["medium", "moyen", "prio2", "prio 2"], ["10 wd", "10 jours", "10 j"]]
+    },
+    {
+      "id": "SLA-05",
+      "categorie": "dossier",
+      "critere": "SLA — correction finale incident mineur (Prio3)",
+      "valeur": "2 semaines",
+      "statut": "obligatoire",
+      "source": "16.0 tableau SLA",
+      "mots_cles": [["mineur", "minor", "prio3", "prio 3"], ["2 semaines", "2 weeks", "deux semaines"]]
+    },
+
+    {
+      "id": "EXC-01",
+      "categorie": "dossier",
+      "critere": "Motifs d'exclusion du depouillement technique",
+      "valeur": "5 motifs (eligibilite, references, technologies obsoletes, valeurs non satisfaites, non-conformite au perimetre)",
+      "statut": "eliminatoire",
+      "source": "5.4",
+      "mots_cles": [["exclu", "exclusion", "excluded", "disqualifi"]]
+    },
+    {
+      "id": "EXC-02",
+      "categorie": "dossier",
+      "critere": "Consequence de l'exclusion",
+      "valeur": "offre commerciale non ouverte, pas de seconde soumission",
+      "statut": "eliminatoire",
+      "source": "5.4",
+      "mots_cles": [["offre commerciale", "commercial offer"], ["non ouverte", "not be opened", "seconde soumission", "second submission"]]
+    },
+    {
+      "id": "EXC-03",
+      "categorie": "dossier",
+      "critere": "Signature d'un accord de confidentialite (NDA)",
+      "valeur": "par le fournisseur retenu",
+      "statut": "obligatoire",
+      "source": "page de garde / 4.2",
+      "mots_cles": [["nda", "non-disclosure", "confidentialite"]]
+    },
+    {
+      "id": "EXC-04",
+      "categorie": "dossier",
+      "critere": "Reponse remise avant la date limite",
+      "valeur": "les reponses tardives peuvent etre disqualifiees",
+      "statut": "eliminatoire",
+      "source": "5.1 / 9.0",
+      "mots_cles": [["date limite", "deadline", "tardive", "late"]]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+# =============================================================================
+# DÉPENDANCES DU PROJET — reconstruites à partir des imports réels
+# =============================================================================
+# Ce fichier n'est pas un « pip freeze ». Un freeze liste tout ce qui traîne
+# dans l'environnement, y compris les dépendances de dépendances et les paquets
+# installés par erreur — 100 lignes là où le projet en importe 12.
+#
+# Ici, chaque ligne correspond à un import trouvé dans le code, avec la version
+# vérifiée sur la machine de développement au 31/08/2026.
+#
+# INSTALLATION
+#   pip install -r requirements.txt
+#   python -m spacy download xx_ent_wiki_sm
+#
+# Trois choses ne s'installent PAS avec pip et doivent tourner à côté :
+#   - Ollama            (modèles d'embedding et de génération)
+#   - Milvus Standalone (base vectorielle, côté RAG)
+#   - Neo4j             (base de graphe, côté KAG)
+# Voir INSTALLATION.md.
+# =============================================================================
+
+
+# --- LECTURE DES DOCUMENTS ---------------------------------------------------
+pdfplumber==0.11.10        # extraction du texte et des tableaux des PDF
+langdetect==1.0.9          # détection de langue, pour le profil du corpus
+
+
+# --- ANALYSE DU CORPUS -------------------------------------------------------
+spacy==3.8.15              # reconnaissance d'entités (profiler)
+# Le modèle spaCy n'est PAS un paquet pip ordinaire : il s'installe à part.
+#   python -m spacy download xx_ent_wiki_sm
+# Modèle multilingue, choisi parce qu'un corpus n'est pas toujours en français.
+
+
+# --- STOCKAGE ----------------------------------------------------------------
+pymilvus==3.0.1            # client Milvus, côté RAG
+neo4j==6.2.0               # client Neo4j, côté KAG
+
+
+# --- INTERFACE ET RAPPORT ----------------------------------------------------
+streamlit==1.61.1          # interface de l'Advisor
+pandas==2.3.3              # tableaux affichés dans l'interface
+reportlab==5.0.1           # rapport PDF téléchargeable (rapport.py)
+openpyxl==3.1.5            # export de la matrice de conformité en xlsx
+
+
+# --- FACULTATIF : MESURE DU RERANKER ----------------------------------------
+# Ces deux paquets pèsent environ 2,5 Go. Ils ne servent QU'À mesure_reranker.py.
+# Tout le reste du projet tourne sans eux : si l'import échoue, le script le dit
+# clairement et l'Advisor classe le reranker en « non mesurable ici » au lieu de
+# planter.
+#
+# À installer seulement si vous voulez mesurer un reranker :
+#   pip install sentence-transformers torch
+#
+# sentence-transformers==6.0.0
+# torch==2.5.1+cu121       # version CUDA — sur GPU NVIDIA uniquement.
+                           # Sur processeur seul : pip install torch
+                           # Mesure du 22/08 : 22 706 ms par question sur CPU
+                           # contre 2 602 ms sur GPU. Le reranker est
+                           # inutilisable sans carte graphique.
+
+
+# =============================================================================
+# CE QUI N'EST PAS ICI, ET POURQUOI
+# =============================================================================
+# numpy, scipy, scikit-learn, transformers, huggingface_hub, tokenizers...
+#   installés comme dépendances de spacy et sentence-transformers. pip les
+#   résout tout seul ; les figer ici créerait des conflits de version au
+#   prochain déploiement.
+#
+# requests, urllib3, httpx...
+#   le projet appelle Ollama avec urllib de la bibliothèque standard, pas avec
+#   requests. Aucun import direct.
+#
+# uvicorn, starlette, fastapi...
+#   dépendances de streamlit, jamais importées par le projet.
+# =============================================================================

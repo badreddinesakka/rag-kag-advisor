@@ -1,0 +1,383 @@
+{
+  "ok": true,
+  "architecture": "KAG",
+  "modele_generation": "qwen3:8b",
+  "modele_extraction_graphe": "qwen2.5:7b (impose par le routeur)",
+  "mode_recuperation": "graphe entier",
+  "noeuds_graphe": 176,
+  "relations_graphe": 157,
+  "n_triplets_utilises": 157,
+  "taille_groupe": 25,
+  "n_groupes": 7,
+  "n_groupes_vides": 2,
+  "seuil_doublon": 0.72,
+  "n_extractions_brutes": 26,
+  "n_exigences": 24,
+  "n_fusionnees": 2,
+  "taux_doublons": 0.077,
+  "par_categorie": {
+    "security": 2,
+    "infrastructure": 0,
+    "sla": 0,
+    "hr": 3,
+    "financial": 3,
+    "eligibility": 0,
+    "functional": 4,
+    "technical": 5,
+    "delivery": 0,
+    "process": 7
+  },
+  "anomalies": {
+    "json_illisible": 2,
+    "racine_inattendue": 0,
+    "ligne_non_objet": 0,
+    "exigence_vide": 0,
+    "categorie_hors_liste": 0,
+    "statut_hors_liste": 0,
+    "etiquette_incorrecte": 0,
+    "categories_vues": {}
+  },
+  "duree_llm_s": 498.7,
+  "appels_llm_construction": 11,
+  "appels_llm_extraction": 7,
+  "exigences": [
+    {
+      "requirement": "The bidder must not reproduce unauthorized copies.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must not use unauthorized copies.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must not distribute unauthorized copies.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must not disclose any information.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The selected supplier must sign a non-disclosure agreement.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution must be optimized in addition to the invoice design.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The current invoice generation solution requires a manually coded update.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The current invoice generation solution is complex in the implementation of design changes.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The current invoice generation solution is slow in the document generation process.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution must produce customer invoices in PDF format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The invoice generation solution is a key component of the billing system.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor shall provide details regarding the licensing model.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": [
+        "The vendor must provide details regarding the licensing model."
+      ]
+    },
+    {
+      "requirement": "The vendor must respond to requirement specifications.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor must respond to clause.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a web application for managing, running, monitoring, and reporting.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a proposed solution management.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit CVs.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must respond to each of the requirements.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a proposed solution.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each module must be supported for at least 3 years.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each module has an estimated cost and license scheme.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must clearly indicate education level in the CVs.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 7
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must clearly indicate years of experience in the CVs.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 7
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Failure to comply may result in disqualification of the bid.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 7
+        }
+      ],
+      "variantes": []
+    }
+  ]
+}

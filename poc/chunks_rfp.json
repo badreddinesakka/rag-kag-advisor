@@ -1,0 +1,1148 @@
+{
+ "document": "RFP_OT_Bill_Generation_Solution_V1_with_HR.pdf",
+ "n_parents": 45,
+ "n_enfants": 89,
+ "n_enfants_tableau": 10,
+ "mots_enfant": 60,
+ "parents": [
+  {
+   "parent_id": "P000",
+   "section": "0",
+   "titre": "Request for Proposal",
+   "page": 1,
+   "texte": "Abstract: The purpose of this RFP is to solicit responses from identified vendors to provide a bill generation solution based on the requirements identified in this document. Budgetary estimates are required. All information in connection with this RFP and project is strictly confidential. Only the official stakeholders of the project are entitled to consult this document or to intervene in the different phases of the project according to the limits of their scope of actions. The unlawful copying, distribution or use of this document is strictly prohibited without the written consent of Ooredoo Tunisia. The selected vendor must sign a Non-Disclosure Agreement ( NDA ) with Ooredoo Tunisia. In no case may this RFP constitute a commitment to contract by Ooredoo Tunisia.",
+   "tableaux": [],
+   "n_car": 777
+  },
+  {
+   "parent_id": "P001",
+   "section": "1.0",
+   "titre": "About Ooredoo Tunisia",
+   "page": 4,
+   "texte": "Ooredoo Tunisia is a private telecommunications company in Tunisia. Set up with capital of 330 million Tunisian dinars, it was founded on 11 May 2002. Ooredoo Tunisia is part of the Ooredoo Group. it is the largest operator in Tunisia. Ooredoo Tunisia has also won, for the fourth consecutive year, the ‘ Best Customer Service – Telecommunications Sector ’ award for leveraging digital improvements to better serve customers In order to maintain its leading position in the telecommunications market and to fulfil customer’s requirements, Ooredoo Tunisia has decided to embark on a new solution for bill generation .",
+   "tableaux": [],
+   "n_car": 616
+  },
+  {
+   "parent_id": "P002",
+   "section": "2.0",
+   "titre": "Definition and Scope",
+   "page": 4,
+   "texte": "Bill Generation solution is a core component in Ooredoo Tunisia’s billing system. The role of this entity is to produce customer bills in PDF format. Facing the new customer requirements, Ooredoo Tunisia targets to renew the bill generation solution.",
+   "tableaux": [],
+   "n_car": 250
+  },
+  {
+   "parent_id": "P003",
+   "section": "2.1",
+   "titre": "The Bill design",
+   "page": 4,
+   "texte": "The current bill design did not change since years. For customer satisfaction, new design is requested.",
+   "tableaux": [],
+   "n_car": 103
+  },
+  {
+   "parent_id": "P004",
+   "section": "2.2",
+   "titre": "The Technical solution",
+   "page": 4,
+   "texte": "In addition to the bill design, the technical solution needs to be optimized. The current bill generation solution has several limitations: • Slowness of document generation process • Complexity of design changes implementation: Any change requires a hardcoded update.",
+   "tableaux": [],
+   "n_car": 268
+  },
+  {
+   "parent_id": "P005",
+   "section": "3.0",
+   "titre": "Goals and Objectives",
+   "page": 4,
+   "texte": "The purpose of this document is to solicit responses from identified vendors to provide and implement a Bill generation solution based on the requirements identified in this document. Ooredoo requires an industrialized IT solution (standard, preconfigured, fully automated, scalable and reliable solution) The solution must satisfy the envisaged business and technological values of this initiative as follows: 1. Functional area: • Modify the bill design to fit the business requirements • Have a rich and complete bill by supporting any future bill design changes • Faster time to market by provide full automation and full integration capabilities The attached document (2022_DSA_RFP Invoice Revamp.pdf) describe in details all the business requirements with examples of the target bill design 2. Technical Area: • Provide graphical interactive interface for bill design customization • Produce unified XML file for each bill • Insert bill details in Data Base tables (needed for statistics, …) • Produce bill in PDF Format • Send bills by email • Produce and send call details in CSV Format • Create a single PDF bill for several invoices (for splitted large accounts) • Provide web application for proposed solution management (Managing, running, monitoring, and reporting)",
+   "tableaux": [],
+   "n_car": 1278
+  },
+  {
+   "parent_id": "P006",
+   "section": "3.1",
+   "titre": "Main Pain Points",
+   "page": 5,
+   "texte": "By satisfying the above goals and objectives, Ooredoo want to address the main pain points as follows: 1. Technical limitation and lack of flexibilities for extensions and evolutions of bill design 2. Performance issues a. PDF bill generation very slow (20k bills / Hour) b. High usage of server resources (CPU/Memory) 3. Splitted Large account bill generation Some large accounts are not billed in only one root customer, so they are splitted into several roots (large accounts) and later only one PDF invoice is manually created to be sent to the customer. Ooredoo request to automatically generate a single PDF bill for the splitted large account roots",
+   "tableaux": [],
+   "n_car": 655
+  },
+  {
+   "parent_id": "P007",
+   "section": "4.1",
+   "titre": "Contact Person",
+   "page": 5,
+   "texte": "All communications for this RFP should only be done through Ooredoo Tunisia’s Sourcing System ( IVALUA Sourcing).",
+   "tableaux": [],
+   "n_car": 113
+  },
+  {
+   "parent_id": "P008",
+   "section": "4.2",
+   "titre": "Confidentiality",
+   "page": 5,
+   "texte": "All documents and/or information released by Ooredoo Tunisia in the framework of this RFP shall be treated as confidential information. No part of the document and/or information may be disclosed to any third parties without specific and written agreement by Ooredoo Tunisia except as permitted below. Relevant and parts of this RFP may be disclosed to sub-contractors or contracted participants provided that the non- disclosure obligations placed upon participants are applicable to the third party concerned, and these obligations are the responsibility of the participants.",
+   "tableaux": [],
+   "n_car": 577
+  },
+  {
+   "parent_id": "P009",
+   "section": "5.1",
+   "titre": "Respondent Deliverables",
+   "page": 5,
+   "texte": "All respondents shall send one (1) electronic copy of their responses to Ooredoo Tunisia Sourcing System ( IVALUA Sourcing). Note : Marketing brochures will not be considered as responses. Such material must be submitted separately, and may or may not be reviewed by Ooredoo Tunisia. Marketing materials must not be used as a substitute for written responses. It is the Respondent’s responsibility to deliver their responses on. Responses received after the time specified will be considered late may be disqualified.",
+   "tableaux": [],
+   "n_car": 517
+  },
+  {
+   "parent_id": "P010",
+   "section": "5.2",
+   "titre": "Deliverables Format",
+   "page": 6,
+   "texte": "The respondent should submit their response as per below format:",
+   "tableaux": [
+    " | Deliverable |  | Format |  | Document Name |  |  | Folder Name | \n1. The ‘Company Profile’ containing the following: a. Company profile as requested in the Bidder Company Background section. b. A list of the work done previously related to similar implementations in the domain. c. Responsibilities carried out at least during the last years as requested in the References section, in the subject domain, including the names of clients. |  |  | PDF | 01.CP_VendorName |  |  | /VendorName/Main |  | \n2. Overall Solution Concept including Technology platform and products. |  |  | PDF | 02.Solution_VendorName |  |  | /VendorName/Main |  | \n3. Requirements Compliance Matrix for the following areas:  Functional requirements  Technical requirements  Operational requirements  Security requirements  Infrastructure requirements |  |  | MS Excel (Please use the attached excel file) | OT Bill Generation solution Requirement v1.xls |  |  | /VendorName/Main |  | \n4. A detailed response to Ooredoo’s Goals and Objectives (business requirements) |  |  | PDF |  |  |  | /VendorName/Main |  | \n5. Detailed responses for requests described in the following sections: - Implementation section - Training services section - Support & maintenance section |  |  | PDF | 08.IMP_VendorName |  |  | /VendorName/Implem entation |  | \n6. The Product/Solution Licensing Model based on the requirements in the Licensing Model Section |  |  | PDF | 09.LM_VendorName |  |  | /VendorName/Main |  | \n7. The Vendors/Third Parties/System Integrators you may be partnering with |  |  | PDF | 10.ThirdParty_VendorName |  |  | /VendorName/Others |  | \n8. Highlight any key assumptions or additional value- add |  |  | PDF | 11.KA_VendorName |  |  | /VendorName/Others |  | \n9. Any additional information you deem necessary to support the RFP response |  |  | PDF | 12.ADD _VendorName |  |  | /VendorName/Others |  | "
+   ],
+   "n_car": 1959
+  },
+  {
+   "parent_id": "P011",
+   "section": "5.3.1",
+   "titre": "Requirements Definition and Compliance",
+   "page": 7,
+   "texte": "• The Compliance matrix defines the functional/non-functional requirements for equipment/software to be offered and services to be rendered. • The vendor shall respond to the requirement specifications clause by clause, using a compliance summary statement, and will be submitted as described in Deliverables Format Section",
+   "tableaux": [],
+   "n_car": 323
+  },
+  {
+   "parent_id": "P012",
+   "section": "5.3.2",
+   "titre": "Compliance Definition",
+   "page": 7,
+   "texte": "• The compliance column of the compliance summary statement shall contain one and only one of the following acceptable compliance statements. • If “no compliant” is stated for any clause, the equipment/software/service will be assumed not to comply. • For purpose of compliance verification, a document and page number cross-reference shall be given (where applicable) in the reference column of the compliance summary statement. • Any clause marked with “fully comply” in the Vendor’s compliance summary statement is binding on the successful tender to supply equipment/functionalities that meets the requirements of that clause. This applies for the lifetime of any awarded contract.",
+   "tableaux": [
+    " | Compliance Statement |  |  | Meaning | \nFully compliant |  |  | The offered equipment/solution/service is fully compliant with the requirement of the clause |  | \nPartially compliant |  |  | The offered equipment/solution/service doesn’t fully comply with the requirement of the clause or still under development |  | \nNot compliant |  |  | The offered equipment/solution/service does not strictly comply with the requirements of the clause. |  | "
+   ],
+   "n_car": 1135
+  },
+  {
+   "parent_id": "P013",
+   "section": "5.4",
+   "titre": "Technical Vendor Selection and Evaluation Criteria",
+   "page": 7,
+   "texte": "Bidder is required to respond to each of the requirements in the requirements sheets with the proposed solution compliancy as detailed above. Ooredoo Tunisia technical evaluation committee has the right to excluded from tender evaluation if one of the below items is true: 1. Not in Compliance with eligibility criteria (see Financial Performance section) 2. Not in Compliance with references criteria (see References section) 3. Solution is based on old or obsolete technologies 4. Solution deemed to be not satisfying the envisaged business and technological values of this initiative described in this document 5. Is “Not Compliant” with any of the main scope items detailed in this document In case the bidder is excluded based on the above then: 1. The commercial offer will not be opened / considered 2. Will not be allowed for a second submission",
+   "tableaux": [],
+   "n_car": 853
+  },
+  {
+   "parent_id": "P014",
+   "section": "5.5",
+   "titre": "Licensing Model",
+   "page": 8,
+   "texte": "The vendor shall provide the following details regarding the Licensing Model: • Solution licensing model and scheme in details, mentioned the variant available models (example: Tiered, PAYU, Named, Floating, Users, Modular, etc...) • The corresponding estimated License cost according to each model and scheme. • Each Module estimated cost and license scheme. • Annual maintenance and technical support model • Proposed release must be supported at least for 3 years • Modules Dependency.",
+   "tableaux": [],
+   "n_car": 488
+  },
+  {
+   "parent_id": "P015",
+   "section": "6.0",
+   "titre": "IT architecture description",
+   "page": 8,
+   "texte": "This section presents a high-level description of the current IT landscape in Ooredoo and the integration flows between the bill generation solution and other systems. The given information is indicative of the AS IS architecture and could be modified at any time. The bill generation solution transformation project will include an architecture revamp aiming to enhance the IT agility and flexibility. The detailed target architecture will be agreed in the first phase of the project and could present some differences with the architecture presented here.",
+   "tableaux": [],
+   "n_car": 557
+  },
+  {
+   "parent_id": "P016",
+   "section": "6.1",
+   "titre": "High level IT landscape",
+   "page": 8,
+   "texte": "The following diagram is a high level functional representation of the current IT landscape. The diagram is not exhaustive; some applications may be omitted for simplification purpose. BGH is the current bill generation tool used in Ooredoo Tunisia’s project",
+   "tableaux": [],
+   "n_car": 258
+  },
+  {
+   "parent_id": "P017",
+   "section": "6.2",
+   "titre": "Application portfolio",
+   "page": 8,
+   "texte": "This table presents the current application portfolio. Only major applications are represented.",
+   "tableaux": [
+    " | Domain |  |  | Scope |  |  | Vendor / Application | \nBilling |  |  | Bill Calculation |  |  | Ericsson BSCSIX R3 (BCH) |  | \n |  |  | BSCS DB |  |  | Oracle DB Release 11.1.0.7 |  | \n |  |  | Bill generation |  |  | BGH |  | "
+   ],
+   "n_car": 323
+  },
+  {
+   "parent_id": "P018",
+   "section": "6.3",
+   "titre": "Target Architecture",
+   "page": 9,
+   "texte": "The target architecture of proposed solution must be on disaster recovery mode (Active-Active or Active – Passive) based on Ooredoo infrastructure standards Bidder must provide a web application for proposed solution management (Managing, running, monitoring, and reporting)",
+   "tableaux": [],
+   "n_car": 274
+  },
+  {
+   "parent_id": "P019",
+   "section": "7.0",
+   "titre": "Bill generation Requirements",
+   "page": 9,
+   "texte": "The detailed requirements for bill generation solution RFP are grouped in two domains as following: - Functional requirements - Technical requirements",
+   "tableaux": [],
+   "n_car": 150
+  },
+  {
+   "parent_id": "P020",
+   "section": "7.1",
+   "titre": "Functional requirements:",
+   "page": 9,
+   "texte": "The Functional requirements are outlined (but not limited to) in the attached file: “ 2022_DSA_RFP Invoice Revamp.pdf ”",
+   "tableaux": [],
+   "n_car": 119
+  },
+  {
+   "parent_id": "P021",
+   "section": "7.2",
+   "titre": "Technical requirements:",
+   "page": 9,
+   "texte": "The Technical requirements are outlined (but not limited to) in the attached file: “OT Bill Generation Solution Requirement v1.xls”",
+   "tableaux": [],
+   "n_car": 131
+  },
+  {
+   "parent_id": "P022",
+   "section": "8.0",
+   "titre": "IT Infrastructure:",
+   "page": 9,
+   "texte": "Selected Solution shall follow the Ooredoo Tunisia Process, Ooredoo will be providing all the required hardware to host the solution. Bidders will respond to the IT requirement in the SOC considering the above details and will be responsible to fill in the infra resources details based on the application requirement. These requirements will be used to allocate compute, network, and storage resource from Ooredoo Tunisia private cloud for the project. For the avoidance of doubt, Bidders will request required infra resources and Ooredoo Tunisia will be responsible to provide required hardware for the solution deployment. The required Infrastructure Cost will be part of TCO evaluation of the solution.",
+   "tableaux": [],
+   "n_car": 706
+  },
+  {
+   "parent_id": "P023",
+   "section": "9.0",
+   "titre": "Delivery Instructions",
+   "page": 9,
+   "texte": "It is the bidder’s responsibility to deliver their proposal on, or before this deadline. Proposals received after the time specified will be considered late and may be disqualified at Ooredoo’ s discretion.",
+   "tableaux": [],
+   "n_car": 206
+  },
+  {
+   "parent_id": "P024",
+   "section": "9.0",
+   "titre": "Completion Instructions",
+   "page": 9,
+   "texte": "Bidders are responsible for making a careful examination of the scope of this RFP and to comply with all terms and requirements. Bidder must supply concise responses to the requirements within this document. References to external documents or Web sites will not be considered. Failure to address any of the requirements in this RFP could subject the Bidder’s proposal to rejection. It is very important that all bidders respond to all requirements and questions in the same order as identified in the respective Sections. Bidders who do not respond in the correct order of sections will be rejected. All bidder responses to this RFP become the property of Ooredoo. We reserve the right to use any information in this proposal to Ooredoo benefit. The RFP number must be identified in your proposal, and the proposal must be signed by an authorized official of your company. Ooredoo reserves the right to issue revisions in writing to this RFP at any time prior to the closing date.",
+   "tableaux": [],
+   "n_car": 981
+  },
+  {
+   "parent_id": "P025",
+   "section": "9.0",
+   "titre": "Standard Provisions",
+   "page": 10,
+   "texte": "Proposal submitted in response to this RFP should not be construed as an obligation on the part of Ooredoo to award a purchase order and/or contract. Proposals submitted in response to this RFP will be considered firm offers for a period of 30 days from bid close date. However, in the event Bidder reduces the price of any item or service provided in their initial bid responses, Bidder agrees to immediately pass these reductions on to Ooredoo by submitting a revised proposal. Bidder warrants that prices provided in your proposal are no greater than prices being charged any other customer for similar items, quantities and schedules with similar specifications.",
+   "tableaux": [],
+   "n_car": 666
+  },
+  {
+   "parent_id": "P026",
+   "section": "10.0",
+   "titre": "Bidder Company Background",
+   "page": 10,
+   "texte": "Bidder should provide a brief overview and history of the company. Bidder should also describe the company organization and include specific data outlined below:  Bidder Company name and address  Contact name, title, address, email, phone  Headquarter address (if different)  Local sales address (if different)  Years in business under this name  Previous company name(s)  Years in business under previous name(s)",
+   "tableaux": [],
+   "n_car": 420
+  },
+  {
+   "parent_id": "P027",
+   "section": "11.0",
+   "titre": "Warranties",
+   "page": 10,
+   "texte": "Bidder represents and warrants that:  It has full power and authority to execute, deliver and perform its obligations under this RFP entered into pursuant to its terms;  The Services will be provided in accordance with Good Industry Practice;  It will, throughout the Term, maintain an adequate number of personnel to perform the Services, and such personnel will be suitable, appropriately qualified, experienced and competent personnel;  It will ensure that turnover of personnel providing the Services will be limited to 5% (five per cent) in the first Contract Year, and 10% (ten per cent) in the second Contract Year;  Any Deliverables will comply with these relevant specifications and any other relevant requirements and shall be of satisfactory quality, free from design and other inherent defects and fit for their intended purpose;",
+   "tableaux": [],
+   "n_car": 846
+  },
+  {
+   "parent_id": "P028",
+   "section": "12.0",
+   "titre": "Financial Performance",
+   "page": 10,
+   "texte": "Bidder should provide a financial performance summary including:  Financial information on your company, i.e. annual report.  Profit growth history for the past three years.  Average ratio of implementation services versus annuity business (for example, maintenance contracts).",
+   "tableaux": [],
+   "n_car": 280
+  },
+  {
+   "parent_id": "P029",
+   "section": "12.0",
+   "titre": "Eligibility criteria",
+   "page": 11,
+   "texte": "Only legal persons who:  Justify the legal, technical and financial capacities required;  Having an existence of at least 5 years on the final date of submission;  Are in a regular tax situation for having subscribed their declarations, settled the sums due or in the absence of payment, constituted the guarantees deemed sufficient;  Are certified ISO 27001 is recommended. The following are not eligible to participate in this consultation:  Legal persons in compulsory liquidation;  Persons in receivership, unless special authorization has been issued by the competent judicial authority.",
+   "tableaux": [],
+   "n_car": 598
+  },
+  {
+   "parent_id": "P030",
+   "section": "13.0",
+   "titre": "Budgetary Pricing Estimate",
+   "page": 11,
+   "texte": "Bidders should provide: - Budgetary quote to implement the bill generation solution based on the requirements documented in this RFP. - Detailed, itemized pricing model with all applicable fees for support services, professional services, integration, and customization. - Any travel or other costs should be identified separately. - Offer must include 3 years maintenance support - Annual maintenance costs beyond the 3 years warranties for the 4th and 5th year should be identified as separate charges.",
+   "tableaux": [],
+   "n_car": 504
+  },
+  {
+   "parent_id": "P031",
+   "section": "13.0",
+   "titre": "Total Cost of Ownership",
+   "page": 11,
+   "texte": "Bidder should provide the estimated three years total cost of ownership for the proposed solution and should provide details of calculation process.",
+   "tableaux": [],
+   "n_car": 148
+  },
+  {
+   "parent_id": "P032",
+   "section": "14.0",
+   "titre": "Overview",
+   "page": 11,
+   "texte": "Provide a brief overview of your professional and integration services organization while specifying the following topics:  The schedule of the transition process and the hand over  The project team that will take over the transition: team members should be suitable, appropriately qualified, experienced and competent personnel  Roles and responsibilities of proposed team members  Team members should be solution certified : provide copies of certifications  Onsite Vs Offsite activities  Skills transfer and hand over to Ooredoo Tunisia teams  Deliverables",
+   "tableaux": [],
+   "n_car": 566
+  },
+  {
+   "parent_id": "P033",
+   "section": "14.0",
+   "titre": "Methodology and Tools",
+   "page": 11,
+   "texte": "Bidders to include a description for the methodology, tools used to manage the project, change control procedures, and common communication methods.",
+   "tableaux": [],
+   "n_car": 148
+  },
+  {
+   "parent_id": "P034",
+   "section": "15.0",
+   "titre": "Training Services",
+   "page": 12,
+   "texte": "Bidders should provide training services and methods for delivering theoretical and practical trainings while taking into consideration following requirements:  Training should be provided for both engineering and support technical teams. At least 8 persons  Training and training materials must preferably be in French. It will also be Vendor responsibility everything needed for the availability of training environment. For the launching phase, the courses should be run in Ooredoo locals by the Supplier instructor.  Qualified and experienced instructors must give the lectures in the courses. The vendor should provide with a Training plan, Training material and execution for all the functional areas that are part of the scope. Schedule may be adjusted based Ooredoo plans. Ooredoo expects also list of suggested external training if applicable.",
+   "tableaux": [],
+   "n_car": 855
+  },
+  {
+   "parent_id": "P035",
+   "section": "16.0",
+   "titre": "Support & maintenance",
+   "page": 12,
+   "texte": "Bidders should clarify and describe the strategy and scope regarding support and maintenance of the bill generation solution while taking into consideration following:  Describe bidder role and responsibility and provide a RACI Matrix  Provide Escalation Matrix in case of unavailability  Provide details about support Software , Average response time SLA , contact channels (phone/email/portal/etc.).  Type of issue tracking system  Availability of on-site support and troubleshooting  Average response times for bug fixes and enhancement requests",
+   "tableaux": [
+    "Service / Case Type | Category |  |  | Action |  | SLA | \n |  |  |  |  |  | Response | \nEmergency | Critical |  |  | Initial Response | 1 h |  | \n |  |  |  | Restoration-workaround | 1 WD |  | \n |  |  |  | Final Solution/Correction | 3 WD |  | \nTrouble Resolution |  |  |  | Initial Response | 1 h |  | \n |  | Major |  | Workaround | 1 WD |  | \n |  | Prio1 |  | Final Solution/Correction | 5 WD |  | \n |  |  |  | Initial Response | 1 h |  | \n |  | Medium |  | Workaround | 1 WD |  | \n |  | Prio2 |  | Final Solution/Correction | 10 WD |  | \n |  | Minor |  | Initial Response | 1 H |  | \n |  | Prio3 |  | Final Solution/Correction | 2 weeks |  | "
+   ],
+   "n_car": 1199
+  },
+  {
+   "parent_id": "P036",
+   "section": "16.0",
+   "titre": "Local/ offshore teams",
+   "page": 12,
+   "texte": "During the project and after the launch, the Vendor must have a local support team or displacement capacity to act when requested to meet any Ooredoo need.",
+   "tableaux": [],
+   "n_car": 155
+  },
+  {
+   "parent_id": "P037",
+   "section": "17.0",
+   "titre": "References",
+   "page": 12,
+   "texte": "Bidders responding to this RFP must have experience in Telecommunication sector. Bidders are requested to provide:  A copy of its ISO 27001 certification if exists  List of Two reference accounts for similar project in Telecom operators during last 10 years  Include the company name , contact name and title , phone number , email address and brief project description for each reference . References must be willing to discuss the technical and performance aspects of the Bidder’s installed solutions(s) with Ooredoo.",
+   "tableaux": [],
+   "n_car": 522
+  },
+  {
+   "parent_id": "P038",
+   "section": "18.0",
+   "titre": "Glossary",
+   "page": 13,
+   "texte": "",
+   "tableaux": [
+    " | Abbreviation |  |  | Meaning | \nBSCS |  |  | Ooredoo Billing System |  | \nAD |  |  | Active Directory |  | \nB2B |  |  | Enterprise and Professional clients |  | \nB2B2C |  |  | End users of the business range can benefit from the advantages of established agreements. |  | \nB2C |  |  | known as residential clients |  | \nCA |  |  | Revenue |  | \nYTD |  |  | Year to Day |  | "
+   ],
+   "n_car": 377
+  },
+  {
+   "parent_id": "P039",
+   "section": "19.0",
+   "titre": "Human Resources Requirements",
+   "page": 14,
+   "texte": "Bill Generation Solution — Personnel & Staffing Requirements In addition to the technical and functional requirements outlined in this RFP, Ooredoo Tunisia requires that the vendor's project team meets the following Human Resources (HR) criteria. All team members proposed for the implementation and support of the Bill Generation Solution must satisfy the qualifications listed below.",
+   "tableaux": [],
+   "n_car": 385
+  },
+  {
+   "parent_id": "P040",
+   "section": "19.1",
+   "titre": "Required Position",
+   "page": 14,
+   "texte": "",
+   "tableaux": [
+    "Position | Description | Mandatory\nNetwork & Billing Systems Engineer | Senior engineer responsible for the integration of the Bill Generation Solution with Ooredoo Tunisia's existing billing infrastructure (BSCS/BCH, Oracle DB). Must have hands-on experience with telecom billing platforms and network protocols. | Yes"
+   ],
+   "n_car": 319
+  },
+  {
+   "parent_id": "P041",
+   "section": "19.2",
+   "titre": "Minimum Experience",
+   "page": 14,
+   "texte": "Each proposed team member assigned to the Bill Generation Solution project must demonstrate a minimum of 5 (five) years of professional experience in the following domains:",
+   "tableaux": [
+    "Domain | Minimum Years | Details\nNetwork Engineering | 5 years | Design, configuration and operation of IP/telecom networks\nTelecom Billing Systems | 3 years | BSCS, BSS, OSS, billing platforms integration\nEnterprise Software Integration | 3 years | XML, PDF generation engines, database connectors (Oracle)"
+   ],
+   "n_car": 479
+  },
+  {
+   "parent_id": "P042",
+   "section": "19.3",
+   "titre": "Required Certifications",
+   "page": 14,
+   "texte": "At least one (1) member of the proposed team must hold the following certifications. Copies of certification documents must be provided with the proposal.",
+   "tableaux": [
+    "Certification | Issuer | Level | Mandatory\nCCNA — Cisco Certified Network Associate | Cisco | Associate | Yes\nCCNP — Cisco Certified Network Professional | Cisco | Professional | Yes\nISO 27001 Lead Implementer/Auditor | ISO/IEC | Professional | Recommended\nITIL Foundation | Axelos | Foundation | Recommended"
+   ],
+   "n_car": 462
+  },
+  {
+   "parent_id": "P043",
+   "section": "19.4",
+   "titre": "Required Technical Skills",
+   "page": 15,
+   "texte": "The proposed team must collectively demonstrate proficiency in the following technical skills relevant to the Bill Generation Solution integration within Ooredoo Tunisia's infrastructure:",
+   "tableaux": [
+    "Skill / Technology | Category | Proficiency Level\nCisco IOS / IOS-XE | Networking | Expert\nBGP (Border Gateway Protocol) | Networking | Advanced\nOSPF (Open Shortest Path First) | Networking | Advanced\nOracle DB / SQL | Database | Intermediate\nXML / PDF Generation (iText, XSL-FO) | Development | Advanced\nJava / REST API Integration | Development | Intermediate\nLinux / Shell Scripting | System | Intermediate"
+   ],
+   "n_car": 596
+  },
+  {
+   "parent_id": "P044",
+   "section": "19.5",
+   "titre": "Academic Formation",
+   "page": 15,
+   "texte": "The project lead and key technical team members must hold a minimum academic qualification of: Note: Bidders must submit CVs for all proposed team members along with their proposal. CVs must clearly indicate education level, years of experience, certifications held (with copies), and relevant project references. Failure to comply with the HR requirements above may result in disqualification of the bid (see Section 5.4 — Technical Vendor Selection and Evaluation Criteria).",
+   "tableaux": [
+    "Degree | Field of Study | Equivalence | Mandatory\nBac+5 / Master's Degree (5-year) | Computer Networks / Telecom Engineering | Engineer / MSc | Yes\nBac+3 / Bachelor's Degree | Computer Science / IT | BSc / Licence | Minimum accepted"
+   ],
+   "n_car": 708
+  }
+ ],
+ "enfants": [
+  {
+   "enfant_id": "E0000",
+   "parent_id": "P000",
+   "section": "0",
+   "titre": "Request for Proposal",
+   "tableau": false,
+   "texte": "[0 Request for Proposal] Abstract: The purpose of this RFP is to solicit responses from identified vendors to provide a bill generation solution based on the requirements identified in this document. Budgetary estimates are required. All information in connection with this RFP and project is strictly confidential."
+  },
+  {
+   "enfant_id": "E0001",
+   "parent_id": "P000",
+   "section": "0",
+   "titre": "Request for Proposal",
+   "tableau": false,
+   "texte": "[0 Request for Proposal] in connection with this RFP and project is strictly confidential. Only the official stakeholders of the project are entitled to consult this document or to intervene in the different phases of the project according to the limits of their scope of actions."
+  },
+  {
+   "enfant_id": "E0002",
+   "parent_id": "P000",
+   "section": "0",
+   "titre": "Request for Proposal",
+   "tableau": false,
+   "texte": "[0 Request for Proposal] project according to the limits of their scope of actions. The unlawful copying, distribution or use of this document is strictly prohibited without the written consent of Ooredoo Tunisia. The selected vendor must sign a Non-Disclosure Agreement ( NDA ) with Ooredoo Tunisia. In no case may this RFP constitute a commitment to contract by Ooredoo Tunisia."
+  },
+  {
+   "enfant_id": "E0003",
+   "parent_id": "P001",
+   "section": "1.0",
+   "titre": "About Ooredoo Tunisia",
+   "tableau": false,
+   "texte": "[1.0 About Ooredoo Tunisia] Ooredoo Tunisia is a private telecommunications company in Tunisia. Set up with capital of 330 million Tunisian dinars, it was founded on 11 May 2002. Ooredoo Tunisia is part of the Ooredoo Group. it is the largest operator in Tunisia."
+  },
+  {
+   "enfant_id": "E0004",
+   "parent_id": "P001",
+   "section": "1.0",
+   "titre": "About Ooredoo Tunisia",
+   "tableau": false,
+   "texte": "[1.0 About Ooredoo Tunisia] the Ooredoo Group. it is the largest operator in Tunisia. Ooredoo Tunisia has also won, for the fourth consecutive year, the ‘ Best Customer Service – Telecommunications Sector ’ award for leveraging digital improvements to better serve customers In order to maintain its leading position in the telecommunications market and to fulfil customer’s requirements, Ooredoo Tunisia has decided to embark on a new solution for bill generation ."
+  },
+  {
+   "enfant_id": "E0005",
+   "parent_id": "P002",
+   "section": "2.0",
+   "titre": "Definition and Scope",
+   "tableau": false,
+   "texte": "[2.0 Definition and Scope] Bill Generation solution is a core component in Ooredoo Tunisia’s billing system. The role of this entity is to produce customer bills in PDF format. Facing the new customer requirements, Ooredoo Tunisia targets to renew the bill generation solution."
+  },
+  {
+   "enfant_id": "E0006",
+   "parent_id": "P003",
+   "section": "2.1",
+   "titre": "The Bill design",
+   "tableau": false,
+   "texte": "[2.1 The Bill design] The current bill design did not change since years. For customer satisfaction, new design is requested."
+  },
+  {
+   "enfant_id": "E0007",
+   "parent_id": "P004",
+   "section": "2.2",
+   "titre": "The Technical solution",
+   "tableau": false,
+   "texte": "[2.2 The Technical solution] In addition to the bill design, the technical solution needs to be optimized. The current bill generation solution has several limitations: • Slowness of document generation process • Complexity of design changes implementation: Any change requires a hardcoded update."
+  },
+  {
+   "enfant_id": "E0008",
+   "parent_id": "P005",
+   "section": "3.0",
+   "titre": "Goals and Objectives",
+   "tableau": false,
+   "texte": "[3.0 Goals and Objectives] The purpose of this document is to solicit responses from identified vendors to provide and implement a Bill generation solution based on the requirements identified in this document. Ooredoo requires an industrialized IT solution (standard, preconfigured, fully automated, scalable and reliable solution) The solution must satisfy the envisaged business and technological values of this initiative as follows: 1. Functional area:"
+  },
+  {
+   "enfant_id": "E0009",
+   "parent_id": "P005",
+   "section": "3.0",
+   "titre": "Goals and Objectives",
+   "tableau": false,
+   "texte": "[3.0 Goals and Objectives] technological values of this initiative as follows: 1. Functional area: • Modify the bill design to fit the business requirements • Have a rich and complete bill by supporting any future bill design changes • Faster time to market by provide full automation and full integration capabilities The attached document (2022_DSA_RFP Invoice Revamp.pdf) describe in details all the business requirements with examples of the target bill design 2."
+  },
+  {
+   "enfant_id": "E0010",
+   "parent_id": "P005",
+   "section": "3.0",
+   "titre": "Goals and Objectives",
+   "tableau": false,
+   "texte": "[3.0 Goals and Objectives] business requirements with examples of the target bill design 2. Technical Area:"
+  },
+  {
+   "enfant_id": "E0011",
+   "parent_id": "P005",
+   "section": "3.0",
+   "titre": "Goals and Objectives",
+   "tableau": false,
+   "texte": "[3.0 Goals and Objectives] with examples of the target bill design 2. Technical Area: • Provide graphical interactive interface for bill design customization • Produce unified XML file for each bill • Insert bill details in Data Base tables (needed for statistics, …) • Produce bill in PDF Format • Send bills by email • Produce and send call details in CSV Format • Create a single PDF bill for several invoices (for splitted large accounts) • Provide web application for proposed solution management (Managing, running, monitoring, and reporting)"
+  },
+  {
+   "enfant_id": "E0012",
+   "parent_id": "P006",
+   "section": "3.1",
+   "titre": "Main Pain Points",
+   "tableau": false,
+   "texte": "[3.1 Main Pain Points] By satisfying the above goals and objectives, Ooredoo want to address the main pain points as follows: 1. Technical limitation and lack of flexibilities for extensions and evolutions of bill design 2. Performance issues a. PDF bill generation very slow (20k bills / Hour) b. High usage of server resources (CPU/Memory) 3."
+  },
+  {
+   "enfant_id": "E0013",
+   "parent_id": "P006",
+   "section": "3.1",
+   "titre": "Main Pain Points",
+   "tableau": false,
+   "texte": "[3.1 Main Pain Points] / Hour) b. High usage of server resources (CPU/Memory) 3. Splitted Large account bill generation Some large accounts are not billed in only one root customer, so they are splitted into several roots (large accounts) and later only one PDF invoice is manually created to be sent to the customer."
+  },
+  {
+   "enfant_id": "E0014",
+   "parent_id": "P006",
+   "section": "3.1",
+   "titre": "Main Pain Points",
+   "tableau": false,
+   "texte": "[3.1 Main Pain Points] invoice is manually created to be sent to the customer. Ooredoo request to automatically generate a single PDF bill for the splitted large account roots"
+  },
+  {
+   "enfant_id": "E0015",
+   "parent_id": "P007",
+   "section": "4.1",
+   "titre": "Contact Person",
+   "tableau": false,
+   "texte": "[4.1 Contact Person] All communications for this RFP should only be done through Ooredoo Tunisia’s Sourcing System ( IVALUA Sourcing)."
+  },
+  {
+   "enfant_id": "E0016",
+   "parent_id": "P008",
+   "section": "4.2",
+   "titre": "Confidentiality",
+   "tableau": false,
+   "texte": "[4.2 Confidentiality] All documents and/or information released by Ooredoo Tunisia in the framework of this RFP shall be treated as confidential information. No part of the document and/or information may be disclosed to any third parties without specific and written agreement by Ooredoo Tunisia except as permitted below."
+  },
+  {
+   "enfant_id": "E0017",
+   "parent_id": "P008",
+   "section": "4.2",
+   "titre": "Confidentiality",
+   "tableau": false,
+   "texte": "[4.2 Confidentiality] and written agreement by Ooredoo Tunisia except as permitted below. Relevant and parts of this RFP may be disclosed to sub-contractors or contracted participants provided that the non- disclosure obligations placed upon participants are applicable to the third party concerned, and these obligations are the responsibility of the participants."
+  },
+  {
+   "enfant_id": "E0018",
+   "parent_id": "P009",
+   "section": "5.1",
+   "titre": "Respondent Deliverables",
+   "tableau": false,
+   "texte": "[5.1 Respondent Deliverables] All respondents shall send one (1) electronic copy of their responses to Ooredoo Tunisia Sourcing System ( IVALUA Sourcing). Note : Marketing brochures will not be considered as responses. Such material must be submitted separately, and may or may not be reviewed by Ooredoo Tunisia. Marketing materials must not be used as a substitute for written responses."
+  },
+  {
+   "enfant_id": "E0019",
+   "parent_id": "P009",
+   "section": "5.1",
+   "titre": "Respondent Deliverables",
+   "tableau": false,
+   "texte": "[5.1 Respondent Deliverables] must not be used as a substitute for written responses. It is the Respondent’s responsibility to deliver their responses on. Responses received after the time specified will be considered late may be disqualified."
+  },
+  {
+   "enfant_id": "E0020",
+   "parent_id": "P010",
+   "section": "5.2",
+   "titre": "Deliverables Format",
+   "tableau": false,
+   "texte": "[5.2 Deliverables Format] The respondent should submit their response as per below format:"
+  },
+  {
+   "enfant_id": "E0021",
+   "parent_id": "P010",
+   "section": "5.2",
+   "titre": "Deliverables Format",
+   "tableau": true,
+   "texte": "[5.2 Deliverables Format]  | Deliverable |  | Format |  | Document Name |  |  | Folder Name | \n1. The ‘Company Profile’ containing the following: a. Company profile as requested in the Bidder Company Background section. b. A list of the work done previously related to similar implementations in the domain. c. Responsibilities carried out at least during the last years as requested in the References section, in the subject domain, including the names of clients. |  |  | PDF | 01.CP_VendorName |  |  | /VendorName/Main |  | \n2. Overall Solution Concept including Technology platform and products. |  |  | PDF | 02.Solution_VendorName |  |  | /VendorName/Main |  | \n3. Requirements Compliance Matrix for the following areas:  Functional requirements  Technical requirements  Operational requirements  Security requirements  Infrastructure requirements |  |  | MS Excel (Please use the attached excel file) | OT Bill Generation solution Requirement v1.xls |  |  | /VendorName/Main |  | \n4. A detailed response to Ooredoo’s Goals and Objectives (business requirements) |  |  | PDF |  |  |  | /VendorName/Main |  | \n5. Detailed responses for requests described in the following sections: - Implementation section - Training services section - Support & maintenance section |  |  | PDF | 08.IMP_VendorName |  |  | /VendorName/Implem entation |  | \n6. The Product/Solution Licensing Model based on the requirements in the Licensing Model Section |  |  | PDF | 09.LM_VendorName |  |  | /VendorName/Main |  | \n7. The Vendors/Third Parties/System Integrators you may be partnering with |  |  | PDF | 10.ThirdParty_VendorName |  |  | /VendorName/Others |  | \n8. Highlight any key assumptions or additional value- add |  |  | PDF | 11.KA_VendorName |  |  | /VendorName/Others |  | \n9. Any additional information you deem necessary to support the RFP response |  |  | PDF | 12.ADD _VendorName |  |  | /VendorName/Others |  | "
+  },
+  {
+   "enfant_id": "E0022",
+   "parent_id": "P011",
+   "section": "5.3.1",
+   "titre": "Requirements Definition and Compliance",
+   "tableau": false,
+   "texte": "[5.3.1 Requirements Definition and Compliance] • The Compliance matrix defines the functional/non-functional requirements for equipment/software to be offered and services to be rendered. • The vendor shall respond to the requirement specifications clause by clause, using a compliance summary statement, and will be submitted as described in Deliverables Format Section"
+  },
+  {
+   "enfant_id": "E0023",
+   "parent_id": "P012",
+   "section": "5.3.2",
+   "titre": "Compliance Definition",
+   "tableau": false,
+   "texte": "[5.3.2 Compliance Definition] • The compliance column of the compliance summary statement shall contain one and only one of the following acceptable compliance statements. • If “no compliant” is stated for any clause, the equipment/software/service will be assumed not to comply."
+  },
+  {
+   "enfant_id": "E0024",
+   "parent_id": "P012",
+   "section": "5.3.2",
+   "titre": "Compliance Definition",
+   "tableau": false,
+   "texte": "[5.3.2 Compliance Definition] any clause, the equipment/software/service will be assumed not to comply. • For purpose of compliance verification, a document and page number cross-reference shall be given (where applicable) in the reference column of the compliance summary statement."
+  },
+  {
+   "enfant_id": "E0025",
+   "parent_id": "P012",
+   "section": "5.3.2",
+   "titre": "Compliance Definition",
+   "tableau": false,
+   "texte": "[5.3.2 Compliance Definition] applicable) in the reference column of the compliance summary statement. • Any clause marked with “fully comply” in the Vendor’s compliance summary statement is binding on the successful tender to supply equipment/functionalities that meets the requirements of that clause. This applies for the lifetime of any awarded contract."
+  },
+  {
+   "enfant_id": "E0026",
+   "parent_id": "P012",
+   "section": "5.3.2",
+   "titre": "Compliance Definition",
+   "tableau": true,
+   "texte": "[5.3.2 Compliance Definition]  | Compliance Statement |  |  | Meaning | \nFully compliant |  |  | The offered equipment/solution/service is fully compliant with the requirement of the clause |  | \nPartially compliant |  |  | The offered equipment/solution/service doesn’t fully comply with the requirement of the clause or still under development |  | \nNot compliant |  |  | The offered equipment/solution/service does not strictly comply with the requirements of the clause. |  | "
+  },
+  {
+   "enfant_id": "E0027",
+   "parent_id": "P013",
+   "section": "5.4",
+   "titre": "Technical Vendor Selection and Evaluation Criteria",
+   "tableau": false,
+   "texte": "[5.4 Technical Vendor Selection and Evaluation Criteria] Bidder is required to respond to each of the requirements in the requirements sheets with the proposed solution compliancy as detailed above. Ooredoo Tunisia technical evaluation committee has the right to excluded from tender evaluation if one of the below items is true: 1. Not in Compliance with eligibility criteria (see Financial Performance section) 2."
+  },
+  {
+   "enfant_id": "E0028",
+   "parent_id": "P013",
+   "section": "5.4",
+   "titre": "Technical Vendor Selection and Evaluation Criteria",
+   "tableau": false,
+   "texte": "[5.4 Technical Vendor Selection and Evaluation Criteria] in Compliance with eligibility criteria (see Financial Performance section) 2. Not in Compliance with references criteria (see References section) 3. Solution is based on old or obsolete technologies 4. Solution deemed to be not satisfying the envisaged business and technological values of this initiative described in this document 5."
+  },
+  {
+   "enfant_id": "E0029",
+   "parent_id": "P013",
+   "section": "5.4",
+   "titre": "Technical Vendor Selection and Evaluation Criteria",
+   "tableau": false,
+   "texte": "[5.4 Technical Vendor Selection and Evaluation Criteria] technological values of this initiative described in this document 5. Is “Not Compliant” with any of the main scope items detailed in this document In case the bidder is excluded based on the above then: 1. The commercial offer will not be opened / considered 2. Will not be allowed for a second submission"
+  },
+  {
+   "enfant_id": "E0030",
+   "parent_id": "P014",
+   "section": "5.5",
+   "titre": "Licensing Model",
+   "tableau": false,
+   "texte": "[5.5 Licensing Model] The vendor shall provide the following details regarding the Licensing Model: • Solution licensing model and scheme in details, mentioned the variant available models (example: Tiered, PAYU, Named, Floating, Users, Modular, etc...) • The corresponding estimated License cost according to each model and scheme. • Each Module estimated cost and license scheme."
+  },
+  {
+   "enfant_id": "E0031",
+   "parent_id": "P014",
+   "section": "5.5",
+   "titre": "Licensing Model",
+   "tableau": false,
+   "texte": "[5.5 Licensing Model] and scheme. • Each Module estimated cost and license scheme. • Annual maintenance and technical support model • Proposed release must be supported at least for 3 years • Modules Dependency."
+  },
+  {
+   "enfant_id": "E0032",
+   "parent_id": "P015",
+   "section": "6.0",
+   "titre": "IT architecture description",
+   "tableau": false,
+   "texte": "[6.0 IT architecture description] This section presents a high-level description of the current IT landscape in Ooredoo and the integration flows between the bill generation solution and other systems. The given information is indicative of the AS IS architecture and could be modified at any time."
+  },
+  {
+   "enfant_id": "E0033",
+   "parent_id": "P015",
+   "section": "6.0",
+   "titre": "IT architecture description",
+   "tableau": false,
+   "texte": "[6.0 IT architecture description] AS IS architecture and could be modified at any time. The bill generation solution transformation project will include an architecture revamp aiming to enhance the IT agility and flexibility. The detailed target architecture will be agreed in the first phase of the project and could present some differences with the architecture presented here."
+  },
+  {
+   "enfant_id": "E0034",
+   "parent_id": "P016",
+   "section": "6.1",
+   "titre": "High level IT landscape",
+   "tableau": false,
+   "texte": "[6.1 High level IT landscape] The following diagram is a high level functional representation of the current IT landscape. The diagram is not exhaustive; some applications may be omitted for simplification purpose. BGH is the current bill generation tool used in Ooredoo Tunisia’s project"
+  },
+  {
+   "enfant_id": "E0035",
+   "parent_id": "P017",
+   "section": "6.2",
+   "titre": "Application portfolio",
+   "tableau": false,
+   "texte": "[6.2 Application portfolio] This table presents the current application portfolio. Only major applications are represented."
+  },
+  {
+   "enfant_id": "E0036",
+   "parent_id": "P017",
+   "section": "6.2",
+   "titre": "Application portfolio",
+   "tableau": true,
+   "texte": "[6.2 Application portfolio]  | Domain |  |  | Scope |  |  | Vendor / Application | \nBilling |  |  | Bill Calculation |  |  | Ericsson BSCSIX R3 (BCH) |  | \n |  |  | BSCS DB |  |  | Oracle DB Release 11.1.0.7 |  | \n |  |  | Bill generation |  |  | BGH |  | "
+  },
+  {
+   "enfant_id": "E0037",
+   "parent_id": "P018",
+   "section": "6.3",
+   "titre": "Target Architecture",
+   "tableau": false,
+   "texte": "[6.3 Target Architecture] The target architecture of proposed solution must be on disaster recovery mode (Active-Active or Active – Passive) based on Ooredoo infrastructure standards Bidder must provide a web application for proposed solution management (Managing, running, monitoring, and reporting)"
+  },
+  {
+   "enfant_id": "E0038",
+   "parent_id": "P019",
+   "section": "7.0",
+   "titre": "Bill generation Requirements",
+   "tableau": false,
+   "texte": "[7.0 Bill generation Requirements] The detailed requirements for bill generation solution RFP are grouped in two domains as following: - Functional requirements - Technical requirements"
+  },
+  {
+   "enfant_id": "E0039",
+   "parent_id": "P020",
+   "section": "7.1",
+   "titre": "Functional requirements:",
+   "tableau": false,
+   "texte": "[7.1 Functional requirements:] The Functional requirements are outlined (but not limited to) in the attached file: “ 2022_DSA_RFP Invoice Revamp.pdf ”"
+  },
+  {
+   "enfant_id": "E0040",
+   "parent_id": "P021",
+   "section": "7.2",
+   "titre": "Technical requirements:",
+   "tableau": false,
+   "texte": "[7.2 Technical requirements:] The Technical requirements are outlined (but not limited to) in the attached file: “OT Bill Generation Solution Requirement v1.xls”"
+  },
+  {
+   "enfant_id": "E0041",
+   "parent_id": "P022",
+   "section": "8.0",
+   "titre": "IT Infrastructure:",
+   "tableau": false,
+   "texte": "[8.0 IT Infrastructure:] Selected Solution shall follow the Ooredoo Tunisia Process, Ooredoo will be providing all the required hardware to host the solution. Bidders will respond to the IT requirement in the SOC considering the above details and will be responsible to fill in the infra resources details based on the application requirement."
+  },
+  {
+   "enfant_id": "E0042",
+   "parent_id": "P022",
+   "section": "8.0",
+   "titre": "IT Infrastructure:",
+   "tableau": false,
+   "texte": "[8.0 IT Infrastructure:] in the infra resources details based on the application requirement. These requirements will be used to allocate compute, network, and storage resource from Ooredoo Tunisia private cloud for the project. For the avoidance of doubt, Bidders will request required infra resources and Ooredoo Tunisia will be responsible to provide required hardware for the solution deployment."
+  },
+  {
+   "enfant_id": "E0043",
+   "parent_id": "P022",
+   "section": "8.0",
+   "titre": "IT Infrastructure:",
+   "tableau": false,
+   "texte": "[8.0 IT Infrastructure:] be responsible to provide required hardware for the solution deployment. The required Infrastructure Cost will be part of TCO evaluation of the solution."
+  },
+  {
+   "enfant_id": "E0044",
+   "parent_id": "P023",
+   "section": "9.0",
+   "titre": "Delivery Instructions",
+   "tableau": false,
+   "texte": "[9.0 Delivery Instructions] It is the bidder’s responsibility to deliver their proposal on, or before this deadline. Proposals received after the time specified will be considered late and may be disqualified at Ooredoo’ s discretion."
+  },
+  {
+   "enfant_id": "E0045",
+   "parent_id": "P024",
+   "section": "9.0",
+   "titre": "Completion Instructions",
+   "tableau": false,
+   "texte": "[9.0 Completion Instructions] Bidders are responsible for making a careful examination of the scope of this RFP and to comply with all terms and requirements. Bidder must supply concise responses to the requirements within this document. References to external documents or Web sites will not be considered."
+  },
+  {
+   "enfant_id": "E0046",
+   "parent_id": "P024",
+   "section": "9.0",
+   "titre": "Completion Instructions",
+   "tableau": false,
+   "texte": "[9.0 Completion Instructions] to external documents or Web sites will not be considered. Failure to address any of the requirements in this RFP could subject the Bidder’s proposal to rejection. It is very important that all bidders respond to all requirements and questions in the same order as identified in the respective Sections."
+  },
+  {
+   "enfant_id": "E0047",
+   "parent_id": "P024",
+   "section": "9.0",
+   "titre": "Completion Instructions",
+   "tableau": false,
+   "texte": "[9.0 Completion Instructions] in the same order as identified in the respective Sections. Bidders who do not respond in the correct order of sections will be rejected. All bidder responses to this RFP become the property of Ooredoo. We reserve the right to use any information in this proposal to Ooredoo benefit."
+  },
+  {
+   "enfant_id": "E0048",
+   "parent_id": "P024",
+   "section": "9.0",
+   "titre": "Completion Instructions",
+   "tableau": false,
+   "texte": "[9.0 Completion Instructions] to use any information in this proposal to Ooredoo benefit. The RFP number must be identified in your proposal, and the proposal must be signed by an authorized official of your company. Ooredoo reserves the right to issue revisions in writing to this RFP at any time prior to the closing date."
+  },
+  {
+   "enfant_id": "E0049",
+   "parent_id": "P025",
+   "section": "9.0",
+   "titre": "Standard Provisions",
+   "tableau": false,
+   "texte": "[9.0 Standard Provisions] Proposal submitted in response to this RFP should not be construed as an obligation on the part of Ooredoo to award a purchase order and/or contract. Proposals submitted in response to this RFP will be considered firm offers for a period of 30 days from bid close date."
+  },
+  {
+   "enfant_id": "E0050",
+   "parent_id": "P025",
+   "section": "9.0",
+   "titre": "Standard Provisions",
+   "tableau": false,
+   "texte": "[9.0 Standard Provisions] for a period of 30 days from bid close date. However, in the event Bidder reduces the price of any item or service provided in their initial bid responses, Bidder agrees to immediately pass these reductions on to Ooredoo by submitting a revised proposal."
+  },
+  {
+   "enfant_id": "E0051",
+   "parent_id": "P025",
+   "section": "9.0",
+   "titre": "Standard Provisions",
+   "tableau": false,
+   "texte": "[9.0 Standard Provisions] these reductions on to Ooredoo by submitting a revised proposal. Bidder warrants that prices provided in your proposal are no greater than prices being charged any other customer for similar items, quantities and schedules with similar specifications."
+  },
+  {
+   "enfant_id": "E0052",
+   "parent_id": "P026",
+   "section": "10.0",
+   "titre": "Bidder Company Background",
+   "tableau": false,
+   "texte": "[10.0 Bidder Company Background] Bidder should provide a brief overview and history of the company. Bidder should also describe the company organization and include specific data outlined below:"
+  },
+  {
+   "enfant_id": "E0053",
+   "parent_id": "P026",
+   "section": "10.0",
+   "titre": "Bidder Company Background",
+   "tableau": false,
+   "texte": "[10.0 Bidder Company Background] describe the company organization and include specific data outlined below:  Bidder Company name and address  Contact name, title, address, email, phone  Headquarter address (if different)  Local sales address (if different)  Years in business under this name  Previous company name(s)  Years in business under previous name(s)"
+  },
+  {
+   "enfant_id": "E0054",
+   "parent_id": "P027",
+   "section": "11.0",
+   "titre": "Warranties",
+   "tableau": false,
+   "texte": "[11.0 Warranties] Bidder represents and warrants that:  It has full power and authority to execute, deliver and perform its obligations under this RFP entered into pursuant to its terms;  The Services will be provided in accordance with Good Industry Practice;"
+  },
+  {
+   "enfant_id": "E0055",
+   "parent_id": "P027",
+   "section": "11.0",
+   "titre": "Warranties",
+   "tableau": false,
+   "texte": "[11.0 Warranties] Services will be provided in accordance with Good Industry Practice;  It will, throughout the Term, maintain an adequate number of personnel to perform the Services, and such personnel will be suitable, appropriately qualified, experienced and competent personnel;"
+  },
+  {
+   "enfant_id": "E0056",
+   "parent_id": "P027",
+   "section": "11.0",
+   "titre": "Warranties",
+   "tableau": false,
+   "texte": "[11.0 Warranties] personnel will be suitable, appropriately qualified, experienced and competent personnel;  It will ensure that turnover of personnel providing the Services will be limited to 5% (five per cent) in the first Contract Year, and 10% (ten per cent) in the second Contract Year;"
+  },
+  {
+   "enfant_id": "E0057",
+   "parent_id": "P027",
+   "section": "11.0",
+   "titre": "Warranties",
+   "tableau": false,
+   "texte": "[11.0 Warranties] and 10% (ten per cent) in the second Contract Year;  Any Deliverables will comply with these relevant specifications and any other relevant requirements and shall be of satisfactory quality, free from design and other inherent defects and fit for their intended purpose;"
+  },
+  {
+   "enfant_id": "E0058",
+   "parent_id": "P028",
+   "section": "12.0",
+   "titre": "Financial Performance",
+   "tableau": false,
+   "texte": "[12.0 Financial Performance] Bidder should provide a financial performance summary including:  Financial information on your company, i.e. annual report.  Profit growth history for the past three years.  Average ratio of implementation services versus annuity business (for example, maintenance contracts)."
+  },
+  {
+   "enfant_id": "E0059",
+   "parent_id": "P029",
+   "section": "12.0",
+   "titre": "Eligibility criteria",
+   "tableau": false,
+   "texte": "[12.0 Eligibility criteria] Only legal persons who:  Justify the legal, technical and financial capacities required;  Having an existence of at least 5 years on the final date of submission;  Are in a regular tax situation for having subscribed their declarations, settled the sums due or in the absence of payment, constituted the guarantees deemed sufficient;"
+  },
+  {
+   "enfant_id": "E0060",
+   "parent_id": "P029",
+   "section": "12.0",
+   "titre": "Eligibility criteria",
+   "tableau": false,
+   "texte": "[12.0 Eligibility criteria] in the absence of payment, constituted the guarantees deemed sufficient;  Are certified ISO 27001 is recommended. The following are not eligible to participate in this consultation:  Legal persons in compulsory liquidation;  Persons in receivership, unless special authorization has been issued by the competent judicial authority."
+  },
+  {
+   "enfant_id": "E0061",
+   "parent_id": "P030",
+   "section": "13.0",
+   "titre": "Budgetary Pricing Estimate",
+   "tableau": false,
+   "texte": "[13.0 Budgetary Pricing Estimate] Bidders should provide: - Budgetary quote to implement the bill generation solution based on the requirements documented in this RFP. - Detailed, itemized pricing model with all applicable fees for support services, professional services, integration, and customization. - Any travel or other costs should be identified separately."
+  },
+  {
+   "enfant_id": "E0062",
+   "parent_id": "P030",
+   "section": "13.0",
+   "titre": "Budgetary Pricing Estimate",
+   "tableau": false,
+   "texte": "[13.0 Budgetary Pricing Estimate] - Any travel or other costs should be identified separately. - Offer must include 3 years maintenance support - Annual maintenance costs beyond the 3 years warranties for the 4th and 5th year should be identified as separate charges."
+  },
+  {
+   "enfant_id": "E0063",
+   "parent_id": "P031",
+   "section": "13.0",
+   "titre": "Total Cost of Ownership",
+   "tableau": false,
+   "texte": "[13.0 Total Cost of Ownership] Bidder should provide the estimated three years total cost of ownership for the proposed solution and should provide details of calculation process."
+  },
+  {
+   "enfant_id": "E0064",
+   "parent_id": "P032",
+   "section": "14.0",
+   "titre": "Overview",
+   "tableau": false,
+   "texte": "[14.0 Overview] Provide a brief overview of your professional and integration services organization while specifying the following topics:  The schedule of the transition process and the hand over  The project team that will take over the transition:"
+  },
+  {
+   "enfant_id": "E0065",
+   "parent_id": "P032",
+   "section": "14.0",
+   "titre": "Overview",
+   "tableau": false,
+   "texte": "[14.0 Overview]  The project team that will take over the transition: team members should be suitable, appropriately qualified, experienced and competent personnel  Roles and responsibilities of proposed team members  Team members should be solution certified : provide copies of certifications  Onsite Vs Offsite activities  Skills transfer and hand over to Ooredoo Tunisia teams  Deliverables"
+  },
+  {
+   "enfant_id": "E0066",
+   "parent_id": "P033",
+   "section": "14.0",
+   "titre": "Methodology and Tools",
+   "tableau": false,
+   "texte": "[14.0 Methodology and Tools] Bidders to include a description for the methodology, tools used to manage the project, change control procedures, and common communication methods."
+  },
+  {
+   "enfant_id": "E0067",
+   "parent_id": "P034",
+   "section": "15.0",
+   "titre": "Training Services",
+   "tableau": false,
+   "texte": "[15.0 Training Services] Bidders should provide training services and methods for delivering theoretical and practical trainings while taking into consideration following requirements:  Training should be provided for both engineering and support technical teams. At least 8 persons  Training and training materials must preferably be in French. It will also be Vendor responsibility everything needed for the availability of training environment."
+  },
+  {
+   "enfant_id": "E0068",
+   "parent_id": "P034",
+   "section": "15.0",
+   "titre": "Training Services",
+   "tableau": false,
+   "texte": "[15.0 Training Services] Vendor responsibility everything needed for the availability of training environment. For the launching phase, the courses should be run in Ooredoo locals by the Supplier instructor.  Qualified and experienced instructors must give the lectures in the courses."
+  },
+  {
+   "enfant_id": "E0069",
+   "parent_id": "P034",
+   "section": "15.0",
+   "titre": "Training Services",
+   "tableau": false,
+   "texte": "[15.0 Training Services] and experienced instructors must give the lectures in the courses. The vendor should provide with a Training plan, Training material and execution for all the functional areas that are part of the scope. Schedule may be adjusted based Ooredoo plans. Ooredoo expects also list of suggested external training if applicable."
+  },
+  {
+   "enfant_id": "E0070",
+   "parent_id": "P035",
+   "section": "16.0",
+   "titre": "Support & maintenance",
+   "tableau": false,
+   "texte": "[16.0 Support & maintenance] Bidders should clarify and describe the strategy and scope regarding support and maintenance of the bill generation solution while taking into consideration following:  Describe bidder role and responsibility and provide a RACI Matrix  Provide Escalation Matrix in case of unavailability  Provide details about support Software , Average response time SLA , contact channels (phone/email/portal/etc.)."
+  },
+  {
+   "enfant_id": "E0071",
+   "parent_id": "P035",
+   "section": "16.0",
+   "titre": "Support & maintenance",
+   "tableau": false,
+   "texte": "[16.0 Support & maintenance] Software , Average response time SLA , contact channels (phone/email/portal/etc.).  Type of issue tracking system  Availability of on-site support and troubleshooting  Average response times for bug fixes and enhancement requests"
+  },
+  {
+   "enfant_id": "E0072",
+   "parent_id": "P035",
+   "section": "16.0",
+   "titre": "Support & maintenance",
+   "tableau": true,
+   "texte": "[16.0 Support & maintenance] Service / Case Type | Category |  |  | Action |  | SLA | \n |  |  |  |  |  | Response | \nEmergency | Critical |  |  | Initial Response | 1 h |  | \n |  |  |  | Restoration-workaround | 1 WD |  | \n |  |  |  | Final Solution/Correction | 3 WD |  | \nTrouble Resolution |  |  |  | Initial Response | 1 h |  | \n |  | Major |  | Workaround | 1 WD |  | \n |  | Prio1 |  | Final Solution/Correction | 5 WD |  | \n |  |  |  | Initial Response | 1 h |  | \n |  | Medium |  | Workaround | 1 WD |  | \n |  | Prio2 |  | Final Solution/Correction | 10 WD |  | \n |  | Minor |  | Initial Response | 1 H |  | \n |  | Prio3 |  | Final Solution/Correction | 2 weeks |  | "
+  },
+  {
+   "enfant_id": "E0073",
+   "parent_id": "P036",
+   "section": "16.0",
+   "titre": "Local/ offshore teams",
+   "tableau": false,
+   "texte": "[16.0 Local/ offshore teams] During the project and after the launch, the Vendor must have a local support team or displacement capacity to act when requested to meet any Ooredoo need."
+  },
+  {
+   "enfant_id": "E0074",
+   "parent_id": "P037",
+   "section": "17.0",
+   "titre": "References",
+   "tableau": false,
+   "texte": "[17.0 References] Bidders responding to this RFP must have experience in Telecommunication sector. Bidders are requested to provide:"
+  },
+  {
+   "enfant_id": "E0075",
+   "parent_id": "P037",
+   "section": "17.0",
+   "titre": "References",
+   "tableau": false,
+   "texte": "[17.0 References] have experience in Telecommunication sector. Bidders are requested to provide:  A copy of its ISO 27001 certification if exists  List of Two reference accounts for similar project in Telecom operators during last 10 years  Include the company name , contact name and title , phone number , email address and brief project description for each reference ."
+  },
+  {
+   "enfant_id": "E0076",
+   "parent_id": "P037",
+   "section": "17.0",
+   "titre": "References",
+   "tableau": false,
+   "texte": "[17.0 References] email address and brief project description for each reference . References must be willing to discuss the technical and performance aspects of the Bidder’s installed solutions(s) with Ooredoo."
+  },
+  {
+   "enfant_id": "E0077",
+   "parent_id": "P038",
+   "section": "18.0",
+   "titre": "Glossary",
+   "tableau": true,
+   "texte": "[18.0 Glossary]  | Abbreviation |  |  | Meaning | \nBSCS |  |  | Ooredoo Billing System |  | \nAD |  |  | Active Directory |  | \nB2B |  |  | Enterprise and Professional clients |  | \nB2B2C |  |  | End users of the business range can benefit from the advantages of established agreements. |  | \nB2C |  |  | known as residential clients |  | \nCA |  |  | Revenue |  | \nYTD |  |  | Year to Day |  | "
+  },
+  {
+   "enfant_id": "E0078",
+   "parent_id": "P039",
+   "section": "19.0",
+   "titre": "Human Resources Requirements",
+   "tableau": false,
+   "texte": "[19.0 Human Resources Requirements] Bill Generation Solution — Personnel & Staffing Requirements In addition to the technical and functional requirements outlined in this RFP, Ooredoo Tunisia requires that the vendor's project team meets the following Human Resources (HR) criteria. All team members proposed for the implementation and support of the Bill Generation Solution must satisfy the qualifications listed below."
+  },
+  {
+   "enfant_id": "E0079",
+   "parent_id": "P040",
+   "section": "19.1",
+   "titre": "Required Position",
+   "tableau": true,
+   "texte": "[19.1 Required Position] Position | Description | Mandatory\nNetwork & Billing Systems Engineer | Senior engineer responsible for the integration of the Bill Generation Solution with Ooredoo Tunisia's existing billing infrastructure (BSCS/BCH, Oracle DB). Must have hands-on experience with telecom billing platforms and network protocols. | Yes"
+  },
+  {
+   "enfant_id": "E0080",
+   "parent_id": "P041",
+   "section": "19.2",
+   "titre": "Minimum Experience",
+   "tableau": false,
+   "texte": "[19.2 Minimum Experience] Each proposed team member assigned to the Bill Generation Solution project must demonstrate a minimum of 5 (five) years of professional experience in the following domains:"
+  },
+  {
+   "enfant_id": "E0081",
+   "parent_id": "P041",
+   "section": "19.2",
+   "titre": "Minimum Experience",
+   "tableau": true,
+   "texte": "[19.2 Minimum Experience] Domain | Minimum Years | Details\nNetwork Engineering | 5 years | Design, configuration and operation of IP/telecom networks\nTelecom Billing Systems | 3 years | BSCS, BSS, OSS, billing platforms integration\nEnterprise Software Integration | 3 years | XML, PDF generation engines, database connectors (Oracle)"
+  },
+  {
+   "enfant_id": "E0082",
+   "parent_id": "P042",
+   "section": "19.3",
+   "titre": "Required Certifications",
+   "tableau": false,
+   "texte": "[19.3 Required Certifications] At least one (1) member of the proposed team must hold the following certifications. Copies of certification documents must be provided with the proposal."
+  },
+  {
+   "enfant_id": "E0083",
+   "parent_id": "P042",
+   "section": "19.3",
+   "titre": "Required Certifications",
+   "tableau": true,
+   "texte": "[19.3 Required Certifications] Certification | Issuer | Level | Mandatory\nCCNA — Cisco Certified Network Associate | Cisco | Associate | Yes\nCCNP — Cisco Certified Network Professional | Cisco | Professional | Yes\nISO 27001 Lead Implementer/Auditor | ISO/IEC | Professional | Recommended\nITIL Foundation | Axelos | Foundation | Recommended"
+  },
+  {
+   "enfant_id": "E0084",
+   "parent_id": "P043",
+   "section": "19.4",
+   "titre": "Required Technical Skills",
+   "tableau": false,
+   "texte": "[19.4 Required Technical Skills] The proposed team must collectively demonstrate proficiency in the following technical skills relevant to the Bill Generation Solution integration within Ooredoo Tunisia's infrastructure:"
+  },
+  {
+   "enfant_id": "E0085",
+   "parent_id": "P043",
+   "section": "19.4",
+   "titre": "Required Technical Skills",
+   "tableau": true,
+   "texte": "[19.4 Required Technical Skills] Skill / Technology | Category | Proficiency Level\nCisco IOS / IOS-XE | Networking | Expert\nBGP (Border Gateway Protocol) | Networking | Advanced\nOSPF (Open Shortest Path First) | Networking | Advanced\nOracle DB / SQL | Database | Intermediate\nXML / PDF Generation (iText, XSL-FO) | Development | Advanced\nJava / REST API Integration | Development | Intermediate\nLinux / Shell Scripting | System | Intermediate"
+  },
+  {
+   "enfant_id": "E0086",
+   "parent_id": "P044",
+   "section": "19.5",
+   "titre": "Academic Formation",
+   "tableau": false,
+   "texte": "[19.5 Academic Formation] The project lead and key technical team members must hold a minimum academic qualification of: Note: Bidders must submit CVs for all proposed team members along with their proposal. CVs must clearly indicate education level, years of experience, certifications held (with copies), and relevant project references."
+  },
+  {
+   "enfant_id": "E0087",
+   "parent_id": "P044",
+   "section": "19.5",
+   "titre": "Academic Formation",
+   "tableau": false,
+   "texte": "[19.5 Academic Formation] of experience, certifications held (with copies), and relevant project references. Failure to comply with the HR requirements above may result in disqualification of the bid (see Section 5.4 — Technical Vendor Selection and Evaluation Criteria)."
+  },
+  {
+   "enfant_id": "E0088",
+   "parent_id": "P044",
+   "section": "19.5",
+   "titre": "Academic Formation",
+   "tableau": true,
+   "texte": "[19.5 Academic Formation] Degree | Field of Study | Equivalence | Mandatory\nBac+5 / Master's Degree (5-year) | Computer Networks / Telecom Engineering | Engineer / MSc | Yes\nBac+3 / Bachelor's Degree | Computer Science / IT | BSc / Licence | Minimum accepted"
+  }
+ ]
+}

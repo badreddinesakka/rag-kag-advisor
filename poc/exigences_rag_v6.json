@@ -1,0 +1,3273 @@
+{
+  "ok": true,
+  "architecture": "RAG",
+  "collection": "rfp_criteres",
+  "modele_generation": "qwen3:8b",
+  "modele_embedding": "bge-m3",
+  "top_k": 100,
+  "retrieve_k": 10,
+  "seuil_doublon": 0.72,
+  "n_requetes": 21,
+  "n_passages_distincts_trouves": 81,
+  "n_passages_analyses": 81,
+  "n_passages_vides": 7,
+  "n_extractions_brutes": 172,
+  "n_exigences": 167,
+  "n_fusionnees": 5,
+  "taux_doublons": 0.029,
+  "par_categorie": {
+    "security": 7,
+    "infrastructure": 7,
+    "sla": 9,
+    "hr": 26,
+    "financial": 20,
+    "eligibility": 14,
+    "functional": 15,
+    "technical": 15,
+    "delivery": 20,
+    "process": 34
+  },
+  "sections_couvertes": [
+    "0",
+    "10.0",
+    "11.0",
+    "12.0",
+    "13.0",
+    "14.0",
+    "15.0",
+    "16.0",
+    "17.0",
+    "18.0",
+    "19.0",
+    "19.1",
+    "19.2",
+    "19.3",
+    "19.4",
+    "19.5",
+    "2.0",
+    "2.1",
+    "2.2",
+    "3.0",
+    "3.1",
+    "4.2",
+    "5.1",
+    "5.2",
+    "5.3.1",
+    "5.3.2",
+    "5.4",
+    "5.5",
+    "6.0",
+    "6.1",
+    "6.2",
+    "6.3",
+    "7.0",
+    "7.1",
+    "7.2",
+    "8.0",
+    "9.0"
+  ],
+  "anomalies": {
+    "json_illisible": 1,
+    "racine_inattendue": 0,
+    "ligne_non_objet": 0,
+    "exigence_vide": 0,
+    "categorie_hors_liste": 0,
+    "statut_hors_liste": 1,
+    "etiquette_incorrecte": 1,
+    "categories_vues": {}
+  },
+  "duree_llm_s": 1687.1,
+  "exigences": [
+    {
+      "requirement": "The bidder must obtain the Cisco Certified Network Associate certification.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.3 Required Certifications",
+      "provenances": [
+        {
+          "passage": "P1",
+          "source": "19.3 Required Certifications",
+          "section": "19.3",
+          "titre": "Required Certifications",
+          "parent_id": "P042",
+          "enfant_id": "E0083",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must obtain the Cisco Certified Network Professional certification.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.3 Required Certifications",
+      "provenances": [
+        {
+          "passage": "P1",
+          "source": "19.3 Required Certifications",
+          "section": "19.3",
+          "titre": "Required Certifications",
+          "parent_id": "P042",
+          "enfant_id": "E0083",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must obtain the ISO 27001 Lead Implementer/Auditor certification.",
+      "category": "security",
+      "status": "recommended",
+      "source": "19.3 Required Certifications",
+      "provenances": [
+        {
+          "passage": "P1",
+          "source": "19.3 Required Certifications",
+          "section": "19.3",
+          "titre": "Required Certifications",
+          "parent_id": "P042",
+          "enfant_id": "E0083",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must obtain the ITIL Foundation certification.",
+      "category": "hr",
+      "status": "recommended",
+      "source": "19.3 Required Certifications",
+      "provenances": [
+        {
+          "passage": "P1",
+          "source": "19.3 Required Certifications",
+          "section": "19.3",
+          "titre": "Required Certifications",
+          "parent_id": "P042",
+          "enfant_id": "E0083",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a single PDF bill for each split large account root.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.1 Main Pain Points",
+      "provenances": [
+        {
+          "passage": "P2",
+          "source": "3.1 Main Pain Points",
+          "section": "3.1",
+          "titre": "Main Pain Points",
+          "parent_id": "P006",
+          "enfant_id": "E0014",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a web application for managing, running, monitoring, and reporting the proposed solution.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "6.3 Target Architecture",
+      "provenances": [
+        {
+          "passage": "P3",
+          "source": "6.3 Target Architecture",
+          "section": "6.3",
+          "titre": "Target Architecture",
+          "parent_id": "P018",
+          "enfant_id": "E0037",
+          "tableau": false,
+          "page": null
+        },
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": [
+        "The bidder must provide a web application for managing, running, monitoring, and reporting the proposed solution."
+      ]
+    },
+    {
+      "requirement": "The bidder must design the target architecture of the proposed solution to operate in disaster recovery mode (Active-Active or Active-Passive) according to Ooredoo infrastructure standards.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "6.3 Target Architecture",
+      "provenances": [
+        {
+          "passage": "P3",
+          "source": "6.3 Target Architecture",
+          "section": "6.3",
+          "titre": "Target Architecture",
+          "parent_id": "P018",
+          "enfant_id": "E0037",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure the solution can handle the generation of a single PDF invoice for large accounts that are split into multiple roots.",
+      "category": "functional",
+      "status": "unspecified",
+      "source": "3.1 Main Pain Points",
+      "provenances": [
+        {
+          "passage": "P4",
+          "source": "3.1 Main Pain Points",
+          "section": "3.1",
+          "titre": "Main Pain Points",
+          "parent_id": "P006",
+          "enfant_id": "E0013",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must demonstrate expertise in Cisco IOS / IOS-XE.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must show advanced proficiency in BGP (Border Gateway Protocol).",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must exhibit advanced skill in OSPF (Open Shortest Path First).",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have intermediate knowledge of Oracle DB / SQL.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be capable of XML / PDF Generation using iText or XSL-FO.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must possess intermediate proficiency in Java / REST API Integration.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have intermediate skills in Linux / Shell Scripting.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P5",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0085",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a copy of its ISO 27001 certification if it exists.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a list of two reference accounts for similar projects in telecom operators during the last 10 years.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "For each reference, the bidder must give the company name.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "For each reference, the bidder must name a contact person and their title.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "For each reference, the bidder must give a phone number and an email address.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "For each reference, the bidder must summarise the project briefly.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P6",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0075",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a new bill design to replace the current one that has not changed for years.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "2.1 The Bill design",
+      "provenances": [
+        {
+          "passage": "P7",
+          "source": "2.1 The Bill design",
+          "section": "2.1",
+          "titre": "The Bill design",
+          "parent_id": "P003",
+          "enfant_id": "E0006",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide training services and methods for delivering theoretical and practical trainings.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P8",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0067",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide training for both engineering and support technical teams.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P8",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0067",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that at least 8 persons receive training.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P8",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0067",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide training and training materials in French.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P8",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0067",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be responsible for everything needed to ensure the availability of the training environment.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P8",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0067",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify the schedule of the transition process and the hand over.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P9",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0064",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify the project team that will take over the transition.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P9",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0064",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe their role and responsibility and provide a RACI Matrix.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P10",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0070",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an Escalation Matrix in case of unavailability.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P10",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0070",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide details about support software.",
+      "category": "technical",
+      "status": "recommended",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P10",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0070",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must state the average response time SLA.",
+      "category": "sla",
+      "status": "recommended",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P10",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0070",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide contact channels such as phone, email, and portal.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P10",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0070",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a financial performance summary including annual report financial information.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "12.0 Financial Performance",
+      "provenances": [
+        {
+          "passage": "P11",
+          "source": "12.0 Financial Performance",
+          "section": "12.0",
+          "titre": "Financial Performance",
+          "parent_id": "P028",
+          "enfant_id": "E0058",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide profit growth history for the past three years.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "12.0 Financial Performance",
+      "provenances": [
+        {
+          "passage": "P11",
+          "source": "12.0 Financial Performance",
+          "section": "12.0",
+          "titre": "Financial Performance",
+          "parent_id": "P028",
+          "enfant_id": "E0058",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide the average ratio of implementation services versus annuity business.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "12.0 Financial Performance",
+      "provenances": [
+        {
+          "passage": "P11",
+          "source": "12.0 Financial Performance",
+          "section": "12.0",
+          "titre": "Financial Performance",
+          "parent_id": "P028",
+          "enfant_id": "E0058",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that the project team consists of suitable, appropriately qualified, experienced and competent personnel.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P12",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0065",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must define the roles and responsibilities of the proposed team members.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P12",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0065",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide copies of certifications for team members who are solution certified.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P12",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0065",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify whether team members will work onsite or offsite.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P12",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0065",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must transfer skills to Ooredoo Tunisia teams.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "14.0 Overview",
+      "provenances": [
+        {
+          "passage": "P12",
+          "source": "14.0 Overview",
+          "section": "14.0",
+          "titre": "Overview",
+          "parent_id": "P032",
+          "enfant_id": "E0065",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each team member assigned to the Bill Generation Solution project must have at least 5 years of professional experience in the specified domains.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.2 Minimum Experience",
+      "provenances": [
+        {
+          "passage": "P13",
+          "source": "19.2 Minimum Experience",
+          "section": "19.2",
+          "titre": "Minimum Experience",
+          "parent_id": "P041",
+          "enfant_id": "E0080",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a compliance summary statement for each requirement specification clause.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.3.1 Requirements Definition and Compliance",
+      "provenances": [
+        {
+          "passage": "P14",
+          "source": "5.3.1 Requirements Definition and Compliance",
+          "section": "5.3.1",
+          "titre": "Requirements Definition and Compliance",
+          "parent_id": "P011",
+          "enfant_id": "E0022",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must modify the bill design to fit the business requirements.",
+      "category": "functional",
+      "status": "unspecified",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P15",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0009",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must support any future bill design changes.",
+      "category": "functional",
+      "status": "unspecified",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P15",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0009",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide full automation and full integration capabilities.",
+      "category": "technical",
+      "status": "unspecified",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P15",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0009",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that any disclosure of the RFP to sub-contractors or contracted participants is accompanied by non-disclosure obligations applicable to the third party.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "4.2 Confidentiality",
+      "provenances": [
+        {
+          "passage": "P16",
+          "source": "4.2 Confidentiality",
+          "section": "4.2",
+          "titre": "Confidentiality",
+          "parent_id": "P008",
+          "enfant_id": "E0017",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a graphical interactive interface for bill design customization.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must produce a unified XML file for each bill.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must insert bill details into database tables for statistics purposes.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must produce bills in PDF format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must send bills by email.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must produce and send call details in CSV format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must create a single PDF bill for several invoices related to split large accounts.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P17",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0011",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must select one and only one acceptable compliance statement for the compliance column of the compliance summary statement.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.3.2 Compliance Definition",
+      "provenances": [
+        {
+          "passage": "P18",
+          "source": "5.3.2 Compliance Definition",
+          "section": "5.3.2",
+          "titre": "Compliance Definition",
+          "parent_id": "P012",
+          "enfant_id": "E0023",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a Company Profile containing the company profile as requested in the Bidder Company Background section, a list of previously done work related to similar implementations in the domain, and responsibilities carried out in the subject domain over the last years including client names.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit an Overall Solution Concept including the technology platform and products.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a Requirements Compliance Matrix covering functional, technical, operational, security, and infrastructure requirements, formatted as an MS Excel file using the attached template.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a detailed response to Ooredoo’s Goals and Objectives as business requirements.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide detailed responses to the Implementation, Training Services, and Support & Maintenance sections.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a Product/Solution Licensing Model based on the requirements in the Licensing Model Section.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must list the Vendors/Third Parties/System Integrators they may be partnering with.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must highlight any key assumptions or additional value-add.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must include any additional information they deem necessary to support the RFP response.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P19",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0021",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must request the required infrastructure resources based on the application requirements.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P20",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0042",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that the infrastructure resources are allocated from Ooredoo Tunisia private cloud.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P20",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0042",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must propose a licensing model and scheme.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P21",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0031",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide the estimated cost for each module.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P21",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0031",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify the annual maintenance and technical support model.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P21",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0031",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure the proposed release is supported for at least 3 years.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P21",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0031",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must detail the dependencies between modules.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P21",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0031",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The technical solution must be optimized for bill design.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "2.2 The Technical solution",
+      "provenances": [
+        {
+          "passage": "P22",
+          "source": "2.2 The Technical solution",
+          "section": "2.2",
+          "titre": "The Technical solution",
+          "parent_id": "P004",
+          "enfant_id": "E0007",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The technical solution must address the slowness of the document generation process.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "2.2 The Technical solution",
+      "provenances": [
+        {
+          "passage": "P22",
+          "source": "2.2 The Technical solution",
+          "section": "2.2",
+          "titre": "The Technical solution",
+          "parent_id": "P004",
+          "enfant_id": "E0007",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The technical solution must simplify the implementation of design changes to avoid hardcoded updates.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "2.2 The Technical solution",
+      "provenances": [
+        {
+          "passage": "P22",
+          "source": "2.2 The Technical solution",
+          "section": "2.2",
+          "titre": "The Technical solution",
+          "parent_id": "P004",
+          "enfant_id": "E0007",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must hold a Bac+5 / Master's Degree in Computer Networks or Telecom Engineering with an Engineer / MSc equivalence.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P23",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0088",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must hold a Bac+3 / Bachelor's Degree in Computer Science or IT with a BSc / Licence equivalence.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P23",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0088",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an initial response to emergency cases within 1 hour.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must resolve an emergency case with a workaround within 1 working day.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must fully resolve an emergency case within 3 working days.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an initial response to trouble resolution cases within 1 hour.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": [
+        "The bidder must provide an initial response to trouble resolution cases within 1 hour."
+      ]
+    },
+    {
+      "requirement": "The bidder must resolve a trouble resolution case with a workaround within 1 working day.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": [
+        "The bidder must resolve a trouble resolution case with a workaround within 1 working day."
+      ]
+    },
+    {
+      "requirement": "The bidder must fully resolve a trouble resolution case within 5 working days.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": [
+        "The bidder must fully resolve a trouble resolution case within 10 working days."
+      ]
+    },
+    {
+      "requirement": "The bidder must fully resolve a trouble resolution case within 2 weeks.",
+      "category": "sla",
+      "status": "mandatory",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P24",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0072",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have existed for at least 5 years by the final date of submission.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P25",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0059",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must demonstrate legal, technical and financial capacities.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P25",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0059",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be in a regular tax situation with subscribed declarations, settled sums due, or sufficient guarantees in case of non-payment.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P25",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0059",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project lead and key technical team members must have a minimum academic qualification.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P26",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0086",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Bidders must submit CVs for all proposed team members along with their proposal.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P26",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0086",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "CVs must clearly indicate education level, years of experience, certifications held (with copies), and relevant project references.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P26",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0086",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must address the technical limitation and lack of flexibilities for extensions and evolutions of bill design.",
+      "category": "functional",
+      "status": "unspecified",
+      "source": "3.1 Main Pain Points",
+      "provenances": [
+        {
+          "passage": "P28",
+          "source": "3.1 Main Pain Points",
+          "section": "3.1",
+          "titre": "Main Pain Points",
+          "parent_id": "P006",
+          "enfant_id": "E0012",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must address the performance issues related to slow PDF bill generation (20k bills per hour).",
+      "category": "technical",
+      "status": "unspecified",
+      "source": "3.1 Main Pain Points",
+      "provenances": [
+        {
+          "passage": "P28",
+          "source": "3.1 Main Pain Points",
+          "section": "3.1",
+          "titre": "Main Pain Points",
+          "parent_id": "P006",
+          "enfant_id": "E0012",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must address the performance issues related to high usage of server resources (CPU/Memory).",
+      "category": "technical",
+      "status": "unspecified",
+      "source": "3.1 Main Pain Points",
+      "provenances": [
+        {
+          "passage": "P28",
+          "source": "3.1 Main Pain Points",
+          "section": "3.1",
+          "titre": "Main Pain Points",
+          "parent_id": "P006",
+          "enfant_id": "E0012",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an industrialized IT solution that is standard, preconfigured, fully automated, scalable and reliable.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "3.0 Goals and Objectives",
+      "provenances": [
+        {
+          "passage": "P30",
+          "source": "3.0 Goals and Objectives",
+          "section": "3.0",
+          "titre": "Goals and Objectives",
+          "parent_id": "P005",
+          "enfant_id": "E0008",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a cross-reference to a document and page number for compliance verification.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.3.2 Compliance Definition",
+      "provenances": [
+        {
+          "passage": "P31",
+          "source": "5.3.2 Compliance Definition",
+          "section": "5.3.2",
+          "titre": "Compliance Definition",
+          "parent_id": "P012",
+          "enfant_id": "E0024",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide functional requirements for the bill generation solution.",
+      "category": "functional",
+      "status": "unspecified",
+      "source": "7.0 Bill generation Requirements",
+      "provenances": [
+        {
+          "passage": "P33",
+          "source": "7.0 Bill generation Requirements",
+          "section": "7.0",
+          "titre": "Bill generation Requirements",
+          "parent_id": "P019",
+          "enfant_id": "E0038",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide technical requirements for the bill generation solution.",
+      "category": "technical",
+      "status": "unspecified",
+      "source": "7.0 Bill generation Requirements",
+      "provenances": [
+        {
+          "passage": "P33",
+          "source": "7.0 Bill generation Requirements",
+          "section": "7.0",
+          "titre": "Bill generation Requirements",
+          "parent_id": "P019",
+          "enfant_id": "E0038",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must not disclose any information from the RFP to third parties without written permission from Ooredoo Tunisia.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "4.2 Confidentiality",
+      "provenances": [
+        {
+          "passage": "P36",
+          "source": "4.2 Confidentiality",
+          "section": "4.2",
+          "titre": "Confidentiality",
+          "parent_id": "P008",
+          "enfant_id": "E0016",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must use Ericsson BSCSIX R3 (BCH) for bill calculation.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "6.2 Application portfolio",
+      "provenances": [
+        {
+          "passage": "P37",
+          "source": "6.2 Application portfolio",
+          "section": "6.2",
+          "titre": "Application portfolio",
+          "parent_id": "P017",
+          "enfant_id": "E0036",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must use Oracle DB Release 11.1.0.7 for the BSCS DB.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "6.2 Application portfolio",
+      "provenances": [
+        {
+          "passage": "P37",
+          "source": "6.2 Application portfolio",
+          "section": "6.2",
+          "titre": "Application portfolio",
+          "parent_id": "P017",
+          "enfant_id": "E0036",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have experience in the telecommunications sector.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P38",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0074",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must refer to the attached file for technical requirements.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "7.2 Technical requirements:",
+      "provenances": [
+        {
+          "passage": "P39",
+          "source": "7.2 Technical requirements:",
+          "section": "7.2",
+          "titre": "Technical requirements:",
+          "parent_id": "P021",
+          "enfant_id": "E0040",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "If a bidder is excluded due to non-compliance with the main scope items, their commercial offer will not be opened or considered.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+      "provenances": [
+        {
+          "passage": "P40",
+          "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+          "section": "5.4",
+          "titre": "Technical Vendor Selection and Evaluation Criteria",
+          "parent_id": "P013",
+          "enfant_id": "E0029",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have at least 5 years of experience in network engineering, specifically in the design, configuration and operation of IP/telecom networks.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.2 Minimum Experience",
+      "provenances": [
+        {
+          "passage": "P41",
+          "source": "19.2 Minimum Experience",
+          "section": "19.2",
+          "titre": "Minimum Experience",
+          "parent_id": "P041",
+          "enfant_id": "E0081",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have at least 3 years of experience in telecom billing systems, specifically in BSCS, BSS, OSS, and billing platforms integration.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.2 Minimum Experience",
+      "provenances": [
+        {
+          "passage": "P41",
+          "source": "19.2 Minimum Experience",
+          "section": "19.2",
+          "titre": "Minimum Experience",
+          "parent_id": "P041",
+          "enfant_id": "E0081",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have at least 3 years of experience in enterprise software integration, specifically in XML, PDF generation engines, and database connectors (Oracle).",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.2 Minimum Experience",
+      "provenances": [
+        {
+          "passage": "P41",
+          "source": "19.2 Minimum Experience",
+          "section": "19.2",
+          "titre": "Minimum Experience",
+          "parent_id": "P041",
+          "enfant_id": "E0081",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be a legal person not in compulsory liquidation.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P42",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0060",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must not be in receivership unless special authorization has been issued by the competent judicial authority.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P42",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0060",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "ISO 27001 certification is recommended for the bidder.",
+      "category": "security",
+      "status": "recommended",
+      "source": "12.0 Eligibility criteria",
+      "provenances": [
+        {
+          "passage": "P42",
+          "source": "12.0 Eligibility criteria",
+          "section": "12.0",
+          "titre": "Eligibility criteria",
+          "parent_id": "P029",
+          "enfant_id": "E0060",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify the licensing model and scheme in detail, including available variants such as Tiered, PAYU, Named, Floating, Users, Modular, etc.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P43",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0030",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an estimated license cost for each licensing model and scheme.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P43",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0030",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must estimate the cost of each module and its corresponding license scheme.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "5.5 Licensing Model",
+      "provenances": [
+        {
+          "passage": "P43",
+          "source": "5.5 Licensing Model",
+          "section": "5.5",
+          "titre": "Licensing Model",
+          "parent_id": "P014",
+          "enfant_id": "E0030",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide certifications held along with copies.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P44",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0087",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit relevant project references.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.5 Academic Formation",
+      "provenances": [
+        {
+          "passage": "P44",
+          "source": "19.5 Academic Formation",
+          "section": "19.5",
+          "titre": "Academic Formation",
+          "parent_id": "P044",
+          "enfant_id": "E0087",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must limit personnel turnover to 5% in the first Contract Year and 10% in the second Contract Year.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "11.0 Warranties",
+      "provenances": [
+        {
+          "passage": "P45",
+          "source": "11.0 Warranties",
+          "section": "11.0",
+          "titre": "Warranties",
+          "parent_id": "P027",
+          "enfant_id": "E0056",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a training plan, training materials, and execution for all functional areas within the scope.",
+      "category": "delivery",
+      "status": "unspecified",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P46",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0069",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must assign experienced instructors to deliver the lectures in the courses.",
+      "category": "delivery",
+      "status": "unspecified",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P46",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0069",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a list of suggested external training if applicable.",
+      "category": "delivery",
+      "status": "unspecified",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P46",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0069",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure their solution is not based on old or obsolete technologies.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+      "provenances": [
+        {
+          "passage": "P47",
+          "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+          "section": "5.4",
+          "titre": "Technical Vendor Selection and Evaluation Criteria",
+          "parent_id": "P013",
+          "enfant_id": "E0028",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure their solution satisfies the envisaged business and technological values of this initiative.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+      "provenances": [
+        {
+          "passage": "P47",
+          "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+          "section": "5.4",
+          "titre": "Technical Vendor Selection and Evaluation Criteria",
+          "parent_id": "P013",
+          "enfant_id": "E0028",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide the estimated total cost of ownership for the proposed solution over three years.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "13.0 Total Cost of Ownership",
+      "provenances": [
+        {
+          "passage": "P48",
+          "source": "13.0 Total Cost of Ownership",
+          "section": "13.0",
+          "titre": "Total Cost of Ownership",
+          "parent_id": "P031",
+          "enfant_id": "E0063",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an email address and a brief project description for each reference.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P49",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0076",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that each reference is willing to discuss the technical and performance aspects of the Bidder’s installed solutions with Ooredoo.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "17.0 References",
+      "provenances": [
+        {
+          "passage": "P49",
+          "source": "17.0 References",
+          "section": "17.0",
+          "titre": "References",
+          "parent_id": "P037",
+          "enfant_id": "E0076",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "A team member must hold at least one required certification.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.3 Required Certifications",
+      "provenances": [
+        {
+          "passage": "P50",
+          "source": "19.3 Required Certifications",
+          "section": "19.3",
+          "titre": "Required Certifications",
+          "parent_id": "P042",
+          "enfant_id": "E0082",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe the methodology to be used for the project.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "14.0 Methodology and Tools",
+      "provenances": [
+        {
+          "passage": "P51",
+          "source": "14.0 Methodology and Tools",
+          "section": "14.0",
+          "titre": "Methodology and Tools",
+          "parent_id": "P033",
+          "enfant_id": "E0066",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe the tools to be used to manage the project.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "14.0 Methodology and Tools",
+      "provenances": [
+        {
+          "passage": "P51",
+          "source": "14.0 Methodology and Tools",
+          "section": "14.0",
+          "titre": "Methodology and Tools",
+          "parent_id": "P033",
+          "enfant_id": "E0066",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe the change control procedures to be implemented.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "14.0 Methodology and Tools",
+      "provenances": [
+        {
+          "passage": "P51",
+          "source": "14.0 Methodology and Tools",
+          "section": "14.0",
+          "titre": "Methodology and Tools",
+          "parent_id": "P033",
+          "enfant_id": "E0066",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe the common communication methods to be used.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "14.0 Methodology and Tools",
+      "provenances": [
+        {
+          "passage": "P51",
+          "source": "14.0 Methodology and Tools",
+          "section": "14.0",
+          "titre": "Methodology and Tools",
+          "parent_id": "P033",
+          "enfant_id": "E0066",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must state whether the offered solution is fully compliant, partially compliant, or not compliant with the clause requirements.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "5.3.2 Compliance Definition",
+      "provenances": [
+        {
+          "passage": "P52",
+          "source": "5.3.2 Compliance Definition",
+          "section": "5.3.2",
+          "titre": "Compliance Definition",
+          "parent_id": "P012",
+          "enfant_id": "E0026",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must specify the type of issue tracking system to be used.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P53",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0071",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must state whether on-site support and troubleshooting will be available.",
+      "category": "delivery",
+      "status": "unspecified",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P53",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0071",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide average response times for bug fixes and enhancement requests.",
+      "category": "sla",
+      "status": "unspecified",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P53",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0071",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must indicate the contact channels available for support and maintenance.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "16.0 Support & maintenance",
+      "provenances": [
+        {
+          "passage": "P53",
+          "source": "16.0 Support & maintenance",
+          "section": "16.0",
+          "titre": "Support & maintenance",
+          "parent_id": "P035",
+          "enfant_id": "E0071",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The selected vendor must sign a Non-Disclosure Agreement with Ooredoo Tunisia.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "0 Request for Proposal",
+      "provenances": [
+        {
+          "passage": "P54",
+          "source": "0 Request for Proposal",
+          "section": "0",
+          "titre": "Request for Proposal",
+          "parent_id": "P000",
+          "enfant_id": "E0002",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must identify travel and other costs as separate items in the budgetary pricing estimate.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P55",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0062",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must include a 3-year maintenance support offer in the budgetary pricing estimate.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P55",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0062",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must identify annual maintenance costs for the 4th and 5th year as separate charges in the budgetary pricing estimate.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P55",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0062",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must demonstrate collective proficiency in technical skills relevant to the Bill Generation Solution integration within Ooredoo Tunisia's infrastructure.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "19.4 Required Technical Skills",
+      "provenances": [
+        {
+          "passage": "P56",
+          "source": "19.4 Required Technical Skills",
+          "section": "19.4",
+          "titre": "Required Technical Skills",
+          "parent_id": "P043",
+          "enfant_id": "E0084",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must follow the specified format for submitting their response.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "5.2 Deliverables Format",
+      "provenances": [
+        {
+          "passage": "P57",
+          "source": "5.2 Deliverables Format",
+          "section": "5.2",
+          "titre": "Deliverables Format",
+          "parent_id": "P010",
+          "enfant_id": "E0020",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that all clauses marked as 'fully comply' in the compliance summary statement are met for the lifetime of any awarded contract.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.3.2 Compliance Definition",
+      "provenances": [
+        {
+          "passage": "P58",
+          "source": "5.3.2 Compliance Definition",
+          "section": "5.3.2",
+          "titre": "Compliance Definition",
+          "parent_id": "P012",
+          "enfant_id": "E0025",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide the required hardware for the solution deployment.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P59",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0043",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must include the required infrastructure cost in the total cost of ownership evaluation.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P59",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0043",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that sufficient qualified and experienced personnel are available throughout the term to perform the services.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "11.0 Warranties",
+      "provenances": [
+        {
+          "passage": "P60",
+          "source": "11.0 Warranties",
+          "section": "11.0",
+          "titre": "Warranties",
+          "parent_id": "P027",
+          "enfant_id": "E0055",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide budgetary estimates.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "0 Request for Proposal",
+      "provenances": [
+        {
+          "passage": "P61",
+          "source": "0 Request for Proposal",
+          "section": "0",
+          "titre": "Request for Proposal",
+          "parent_id": "P000",
+          "enfant_id": "E0000",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "All information related to this RFP and project must be kept strictly confidential.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "0 Request for Proposal",
+      "provenances": [
+        {
+          "passage": "P61",
+          "source": "0 Request for Proposal",
+          "section": "0",
+          "titre": "Request for Proposal",
+          "parent_id": "P000",
+          "enfant_id": "E0000",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that the RFP and project details are only accessible to official stakeholders of the project.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "0 Request for Proposal",
+      "provenances": [
+        {
+          "passage": "P62",
+          "source": "0 Request for Proposal",
+          "section": "0",
+          "titre": "Request for Proposal",
+          "parent_id": "P000",
+          "enfant_id": "E0001",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must comply with the eligibility criteria outlined in the Financial Performance section.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+      "provenances": [
+        {
+          "passage": "P63",
+          "source": "5.4 Technical Vendor Selection and Evaluation Criteria",
+          "section": "5.4",
+          "titre": "Technical Vendor Selection and Evaluation Criteria",
+          "parent_id": "P013",
+          "enfant_id": "E0027",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have a local support team or displacement capacity available to address Ooredoo's needs during the project and after launch.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "16.0 Local/ offshore teams",
+      "provenances": [
+        {
+          "passage": "P64",
+          "source": "16.0 Local/ offshore teams",
+          "section": "16.0",
+          "titre": "Local/ offshore teams",
+          "parent_id": "P036",
+          "enfant_id": "E0073",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must only include major applications in the application portfolio table.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "6.2 Application portfolio",
+      "provenances": [
+        {
+          "passage": "P65",
+          "source": "6.2 Application portfolio",
+          "section": "6.2",
+          "titre": "Application portfolio",
+          "parent_id": "P017",
+          "enfant_id": "E0035",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that all team members proposed for the implementation and support of the Bill Generation Solution meet the listed qualifications.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.0 Human Resources Requirements",
+      "provenances": [
+        {
+          "passage": "P66",
+          "source": "19.0 Human Resources Requirements",
+          "section": "19.0",
+          "titre": "Human Resources Requirements",
+          "parent_id": "P039",
+          "enfant_id": "E0078",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a senior engineer with hands-on experience in telecom billing platforms and network protocols to integrate the Bill Generation Solution with Ooredoo Tunisia's existing billing infrastructure.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "19.1 Required Position",
+      "provenances": [
+        {
+          "passage": "P67",
+          "source": "19.1 Required Position",
+          "section": "19.1",
+          "titre": "Required Position",
+          "parent_id": "P040",
+          "enfant_id": "E0079",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit responses in written form and deliver them by the specified time to avoid disqualification.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.1 Respondent Deliverables",
+      "provenances": [
+        {
+          "passage": "P68",
+          "source": "5.1 Respondent Deliverables",
+          "section": "5.1",
+          "titre": "Respondent Deliverables",
+          "parent_id": "P009",
+          "enfant_id": "E0019",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide details of the infrastructure resources based on the application requirements.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P69",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0041",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must respond to the IT requirement in the SOC considering the details provided by Ooredoo Tunisia.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "8.0 IT Infrastructure:",
+      "provenances": [
+        {
+          "passage": "P69",
+          "source": "8.0 IT Infrastructure:",
+          "section": "8.0",
+          "titre": "IT Infrastructure:",
+          "parent_id": "P022",
+          "enfant_id": "E0041",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit their responses as an electronic copy to Ooredoo Tunisia Sourcing System (IVALUA Sourcing).",
+      "category": "process",
+      "status": "mandatory",
+      "source": "5.1 Respondent Deliverables",
+      "provenances": [
+        {
+          "passage": "P70",
+          "source": "5.1 Respondent Deliverables",
+          "section": "5.1",
+          "titre": "Respondent Deliverables",
+          "parent_id": "P009",
+          "enfant_id": "E0018",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a budgetary quote to implement the bill generation solution based on the requirements documented in this RFP.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P72",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0061",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a detailed, itemized pricing model with all applicable fees for support services, professional services, integration, and customization.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P72",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0061",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must identify any travel or other costs separately.",
+      "category": "financial",
+      "status": "recommended",
+      "source": "13.0 Budgetary Pricing Estimate",
+      "provenances": [
+        {
+          "passage": "P72",
+          "source": "13.0 Budgetary Pricing Estimate",
+          "section": "13.0",
+          "titre": "Budgetary Pricing Estimate",
+          "parent_id": "P030",
+          "enfant_id": "E0061",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide qualified and experienced instructors to deliver the courses during the launching phase.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P73",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0068",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must conduct the courses during the launching phase in Ooredoo's local locations with Supplier instructors.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "15.0 Training Services",
+      "provenances": [
+        {
+          "passage": "P73",
+          "source": "15.0 Training Services",
+          "section": "15.0",
+          "titre": "Training Services",
+          "parent_id": "P034",
+          "enfant_id": "E0068",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must respond to all requirements and questions in the same order as identified in the respective Sections.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "9.0 Completion Instructions",
+      "provenances": [
+        {
+          "passage": "P74",
+          "source": "9.0 Completion Instructions",
+          "section": "9.0",
+          "titre": "Completion Instructions",
+          "parent_id": "P024",
+          "enfant_id": "E0046",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that all deliverables meet the relevant specifications and other requirements, are of satisfactory quality, free from design and other inherent defects, and fit for their intended purpose.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "11.0 Warranties",
+      "provenances": [
+        {
+          "passage": "P75",
+          "source": "11.0 Warranties",
+          "section": "11.0",
+          "titre": "Warranties",
+          "parent_id": "P027",
+          "enfant_id": "E0057",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must refer to the attached file for the functional requirements.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "7.1 Functional requirements:",
+      "provenances": [
+        {
+          "passage": "P76",
+          "source": "7.1 Functional requirements:",
+          "section": "7.1",
+          "titre": "Functional requirements:",
+          "parent_id": "P020",
+          "enfant_id": "E0039",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must ensure that their responses are concise.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "9.0 Completion Instructions",
+      "provenances": [
+        {
+          "passage": "P78",
+          "source": "9.0 Completion Instructions",
+          "section": "9.0",
+          "titre": "Completion Instructions",
+          "parent_id": "P024",
+          "enfant_id": "E0045",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a glossary of abbreviations with their meanings.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "18.0 Glossary",
+      "provenances": [
+        {
+          "passage": "P79",
+          "source": "18.0 Glossary",
+          "section": "18.0",
+          "titre": "Glossary",
+          "parent_id": "P038",
+          "enfant_id": "E0077",
+          "tableau": true,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit a revised proposal if they reduce the price of any item or service provided in their initial bid responses.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "9.0 Standard Provisions",
+      "provenances": [
+        {
+          "passage": "P80",
+          "source": "9.0 Standard Provisions",
+          "section": "9.0",
+          "titre": "Standard Provisions",
+          "parent_id": "P025",
+          "enfant_id": "E0050",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit their proposal on or before the specified deadline to avoid being considered late and potentially disqualified.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "9.0 Delivery Instructions",
+      "provenances": [
+        {
+          "passage": "P81",
+          "source": "9.0 Delivery Instructions",
+          "section": "9.0",
+          "titre": "Delivery Instructions",
+          "parent_id": "P023",
+          "enfant_id": "E0044",
+          "tableau": false,
+          "page": null
+        }
+      ],
+      "variantes": []
+    }
+  ]
+}

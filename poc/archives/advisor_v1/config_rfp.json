@@ -1,0 +1,12 @@
+{
+  "architecture": "CONTEXTE",
+  "generation_model": "qwen2.5:7b",
+  "num_ctx": 32768,
+  "decoupage": "aucun",
+  "embedding_model": "aucun",
+  "_embedding_model": "aucun",
+  "_embedding_dim": null,
+  "_index_type": null,
+  "_metric_type": null,
+  "_n_chunks_est": null
+}

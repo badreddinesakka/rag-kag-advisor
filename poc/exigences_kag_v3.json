@@ -1,0 +1,1881 @@
+{
+  "ok": true,
+  "architecture": "KAG",
+  "modele_generation": "qwen3:8b",
+  "modele_extraction_graphe": "qwen2.5:7b (impose par le routeur)",
+  "mode_recuperation": "graphe entier",
+  "noeuds_graphe": 335,
+  "relations_graphe": 210,
+  "n_triplets_utilises": 210,
+  "taille_groupe": 25,
+  "n_groupes": 9,
+  "n_groupes_vides": 1,
+  "seuil_doublon": 0.72,
+  "n_extractions_brutes": 132,
+  "n_exigences": 131,
+  "n_fusionnees": 1,
+  "taux_doublons": 0.008,
+  "par_categorie": {
+    "security": 4,
+    "infrastructure": 2,
+    "sla": 2,
+    "hr": 19,
+    "financial": 13,
+    "eligibility": 19,
+    "functional": 14,
+    "technical": 10,
+    "delivery": 14,
+    "process": 34
+  },
+  "anomalies": {
+    "json_illisible": 1,
+    "racine_inattendue": 0,
+    "ligne_non_objet": 0,
+    "exigence_vide": 0,
+    "categorie_hors_liste": 0,
+    "statut_hors_liste": 0,
+    "etiquette_incorrecte": 0,
+    "categories_vues": {}
+  },
+  "duree_llm_s": 1429.7,
+  "appels_llm_construction": 11,
+  "appels_llm_extraction": 9,
+  "exigences": [
+    {
+      "requirement": "The solution must provide a rich and complete bill.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution must satisfy the envisaged business and technological values.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution must ensure full integration capabilities.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution must offer full automation.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The document must describe the business requirements.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The time to market must be reduced to faster.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The interface must provide a graphical interactive.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bill must be sent by email.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bill must produce a unified XML file.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bill must produce a PDF format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor's project team must meet the HR criteria.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor must provide the following details regarding the licensing model.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor must provide a copy of its ISO 27001 certification if it exists.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G1",
+      "provenances": [
+        {
+          "passage": "G1",
+          "source": "graphe · groupe G1",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The selected supplier must sign a non-disclosure agreement (NDA) with Ooredoo Tunisia.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "All information related to this RFP and the project is confidential.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Only official project actors have the right to consult this document or intervene in the different phases of the project according to their action limits.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The illegal copying, distribution, or use of this document is strictly prohibited without written consent from Ooredoo Tunisia.",
+      "category": "security",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The document requires budgetary estimates.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The document seeks responses from identified suppliers to provide and implement a bill generation solution based on the requirements identified in this document.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Identified suppliers must provide a bill generation solution.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G2",
+      "provenances": [
+        {
+          "passage": "G2",
+          "source": "graphe · groupe G2",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder company background must be provided.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Warranties must be provided.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Financial performance must be provided.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Costs must be provided.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Budgetary pricing estimate must be provided.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Total cost of ownership must be provided.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bill generation solution must produce customer bills in PDF format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bill generation solution must be a key component of Ooredoo Tunisia's billing system.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Bill design must support future bill design changes.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Bill design must be modified to meet customer requirements.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Bill design must fit business requirements.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The technical solution must be optimized in addition to invoice design.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The current technical solution has several limitations such as slow document generation process and complexity of updates.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The IT solution must satisfy the business and technological values expected by this initiative.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Bill details must be inserted into database tables.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Call details must produce and send in CSV format.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Several invoices must create a single PDF bill.",
+      "category": "functional",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Ooredoo has a billing system.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Ooredoo will provide all the required hardware to host the solution.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Ooredoo address main pain points.",
+      "category": "process",
+      "status": "unspecified",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Technical limitation must address lack of flexibilities for extensions and evolutions of bill design.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Performance issues must address Ooredoo.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G3",
+      "provenances": [
+        {
+          "passage": "G3",
+          "source": "graphe · groupe G3",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must maintain an adequate number of personnel to perform the services.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be in business under previous name(s).",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": [
+        "The bidder must be in business under this name."
+      ]
+    },
+    {
+      "requirement": "The bidder must provide the estimated three years total cost of ownership for the proposed solution.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must submit CVs for all proposed team members along with their proposal.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide details of calculation process.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a list of two reference accounts for similar project in telecom operators during last 10 years.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide financial information on your company, i.e. annual report.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must have power and authority to execute, deliver and perform its obligations under this RFP entered into pursuant to its terms.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a brief overview and history of the company.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must describe company organization.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must identify any travel or other costs separately.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder will respond to the IT requirement in the SOC.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder is required to respond to each of the requirements in the requirements sheets with the proposed solution compliance as detailed above.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a budgetary quote to implement the bill generation solution based on the requirements documented in this RFP.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide a detailed, itemized pricing model with all applicable fees for support services, professional services, integration, and customization.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide profit growth history for the past three years.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The Ooredoo Tunisia technical evaluation committee has the right to exclude from tender evaluation if one of the below items is true.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Item 1 corresponds to not in compliance with eligibility criteria (see financial performance section).",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Item 2 corresponds to not in compliance with references criteria (see references section).",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Item 3 corresponds to solution is based on old or obsolete technologies.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Item 4 corresponds to solution deemed to be not satisfying the envisaged business and technological values of this initiative described in this document.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Item 5 corresponds to is ‘not compliant’ with any of the main scope items detailed in this document.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "If the bidder is excluded based on the above then results in 1. the commercial offer will not be opened / considered.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G5",
+      "provenances": [
+        {
+          "passage": "G5",
+          "source": "graphe · groupe G5",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The solution licensing model and scheme must be detailed, including examples such as tiered, payu, named, floating, users, modular, etc.",
+      "category": "financial",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The selected solution must follow the Ooredoo Tunisia process.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Proposals received after the time specified will be considered late and may be disqualified at Ooredoo’s discretion.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must supply concise responses to the requirements within this document.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "All bidder responses to this RFP become the property of Ooredoo. We reserve the right to use any information in this proposal to Ooredoo’s benefit.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder company name is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder company address is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The contact title is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The contact name is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The contact email is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The contact address is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The contact phone is not specified.",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The headquarter address is not specified (if different).",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The local sales address is not specified (if different).",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must comply with all terms and requirements of this RFP.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder company must provide its previous company name(s).",
+      "category": "eligibility",
+      "status": "unspecified",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposal submitted in response to this RFP should not be construed as an obligation on the part of Ooredoo to award a purchase order and/or contract.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The requirements will be used to allocate compute, network, and storage resources from Ooredoo Tunisia private cloud for the project.",
+      "category": "infrastructure",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder is responsible for making a careful examination of the scope of this RFP and to comply with all terms and requirements.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G6",
+      "provenances": [
+        {
+          "passage": "G6",
+          "source": "graphe · groupe G6",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The deliverables must comply with these relevant specifications and any other relevant requirements.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The deliverables must be of satisfactory quality, free from design and other inherent defects and fit for their intended purpose.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The deliverables must be mentioned in the text.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Eligible legal persons must justify the legal, technical and financial capacities required.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Eligible legal persons must have an existence of at least 5 years on the final date of submission.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The offer must include 3 years maintenance support.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Annual maintenance costs must be identified as separate charges for the 4th and 5th year.",
+      "category": "financial",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The professional and integration services organization must provide a brief overview.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The transition process must schedule the transition process and the hand over.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project team must take over the transition: team members should be suitable, appropriately qualified, experienced and competent personnel.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project team will be suitable, appropriately qualified, experienced and competent according to the text.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team members must have roles and responsibilities of proposed team members.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The transition process schedule is specified in the text.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project team members must have roles and responsibilities are specified.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project team members should provide copies of certifications.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Onsite vs offsite activities must be mentioned in the text.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Skills transfer and hand over must be to Ooredoo Tunisia teams mentioned in the text.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Methodology and tools must have a description required for project management.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Training must be provided for at least 8 persons.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Training materials must preferably be in French according to the text.",
+      "category": "process",
+      "status": "recommended",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The vendor should provide a training plan, training material and execution for all functional areas.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Support & maintenance strategy and scope regarding support and maintenance of the bill generation solution are required.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder role and responsibility should be described in a RACI matrix.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G7",
+      "provenances": [
+        {
+          "passage": "G7",
+          "source": "graphe · groupe G7",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide an escalation matrix in case of unavailability.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide details about the support software.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The average response time SLA for contact channels must be mentioned.",
+      "category": "sla",
+      "status": "unspecified",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide the type of issue tracking system according to the text.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide details about the availability of on-site support and troubleshooting.",
+      "category": "delivery",
+      "status": "recommended",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must provide average response times for bug fixes and enhancement requests through SLA.",
+      "category": "sla",
+      "status": "unspecified",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "During the project and after the launch, the vendor must have a local support team or displacement capacity to act when requested to meet any Ooredoo need.",
+      "category": "delivery",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidders responding to this RFP must have experience in the telecommunication sector according to the text.",
+      "category": "eligibility",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The bidder must be willing to discuss the technical and performance aspects of the bidder’s installed solutions(s) with Ooredoo.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each proposed team member must demonstrate a minimum of 5 (five) years of professional experience in network engineering.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each proposed team member must demonstrate a minimum of 3 years of professional experience in telecom billing systems.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Each proposed team member must demonstrate a minimum of 3 years of professional experience in enterprise software integration.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "At least one (1) member must hold CCNP certification.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in OSPF (Open Shortest Path First) networking.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in XML / PDF generation (iText, XSL-FO) development.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in Oracle DB / SQL database.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in Linux / shell scripting system.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in Java / REST API integration development.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The network & billing systems senior engineer is responsible for the integration of the bill generation solution with Ooredoo Tunisia's existing billing infrastructure.",
+      "category": "technical",
+      "status": "mandatory",
+      "source": "graphe · groupe G8",
+      "provenances": [
+        {
+          "passage": "G8",
+          "source": "graphe · groupe G8",
+          "n_triplets_du_groupe": 25
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in Cisco IOS / IOS-XE networking.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G9",
+      "provenances": [
+        {
+          "passage": "G9",
+          "source": "graphe · groupe G9",
+          "n_triplets_du_groupe": 10
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The proposed team must demonstrate proficiency in BGP (border gateway protocol) networking.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G9",
+      "provenances": [
+        {
+          "passage": "G9",
+          "source": "graphe · groupe G9",
+          "n_triplets_du_groupe": 10
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "The project lead and key technical team members must hold a minimum academic qualification of bac+5 / master's degree in computer networks / telecom engineer / msc.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G9",
+      "provenances": [
+        {
+          "passage": "G9",
+          "source": "graphe · groupe G9",
+          "n_triplets_du_groupe": 10
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "Failure to comply with the HR requirements above can result in disqualification of the bid.",
+      "category": "process",
+      "status": "mandatory",
+      "source": "graphe · groupe G9",
+      "provenances": [
+        {
+          "passage": "G9",
+          "source": "graphe · groupe G9",
+          "n_triplets_du_groupe": 10
+        }
+      ],
+      "variantes": []
+    },
+    {
+      "requirement": "CVs must indicate clearly the education level, years of experience, certifications held (with copies), and references of relevant projects.",
+      "category": "hr",
+      "status": "mandatory",
+      "source": "graphe · groupe G9",
+      "provenances": [
+        {
+          "passage": "G9",
+          "source": "graphe · groupe G9",
+          "n_triplets_du_groupe": 10
+        }
+      ],
+      "variantes": []
+    }
+  ]
+}
